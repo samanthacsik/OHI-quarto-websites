@@ -242,9 +242,9 @@ Before getting started…
 </ul>
 </div>
 </div>
-<p>This section reviews the <strong>create remote (i.e.&nbsp;GitHub) repo <em>first</em> &gt; clone repo to your local machine to add Quarto website scaffolding files <em>second</em></strong> workflow. If you need / want to instead use the <em>create a local repo with Quarto website scaffolding files first &gt; create upstream remote (GitHub) repo second</em> workflow, check out <a href="https://ucsb-meds.github.io/creating-quarto-websites/#why-use-the-command-line-to-set-up-your-quarto-website">these instructions</a>.</p>
+<p>This section reviews the <strong>“create remote (i.e.&nbsp;GitHub) repo <em>first</em> &gt; clone repo to your local machine to add Quarto website scaffolding files <em>second</em>”</strong> workflow. If you need / want to instead use the <em>create a local repo with Quarto website scaffolding files first &gt; create upstream remote (GitHub) repo second</em> workflow, check out <a href="https://ucsb-meds.github.io/creating-quarto-websites/#why-use-the-command-line-to-set-up-your-quarto-website">these instructions</a>.</p>
 <section id="steps" class="level3">
-<h3 class="anchored" data-anchor-id="steps">STEPS:</h3>
+<h3 class="anchored" data-anchor-id="steps">Steps:</h3>
 <ol type="1">
 <li><p><strong>Navigate to the GitHub profile or organization</strong> where you want your website repository (repo) to live (this will likely be the <a href="https://github.com/OHI-Science">OHI-Science</a> GitHub organization, but certainly doesn’t have to be).</p></li>
 <li><p><strong>Create and clone a GitHub repository</strong> following the instructions, below. <em>Importantly, choose your repo name carefully</em>, as it’ll become a part of the website’s URL, once deployed (e.g.&nbsp;a repo named <code>my-awesome-repo</code> that lives in the <code>OHI-Science</code> organization will have a base URL, <em>https://OHI-Science/my-awesome-repo</em>).</p></li>
@@ -266,13 +266,22 @@ Step-by-step instructions for creating and cloning a GitHub repo:
 <li>Click on <strong>Repositories tab</strong> in the top menu bar</li>
 <li>Click on the green <strong>New repository</strong> button in the upper right-hand corner</li>
 <li>Give it a name, and optionally, a short description. Select the radio button for <strong>Public</strong> repo (it should be selected by default). <strong><em>DO NOT</em></strong> initialize the repo with a README or <code>.gitignore</code> (we can add these later). Click <strong>Create repository</strong>.</li>
-<li>From your repo’s main page, click the green <strong>Code</strong> button and <strong>copy the URL</strong> to your clipboard</li>
+<li><strong>Copy your repo’s URL to your clipboard</strong> (currently, it’s an empty repository)</li>
 </ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/new-github-repo.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
 <p><strong>Clone your repo:</strong></p>
 <ol start="5" type="1">
 <li>Open up RStudio</li>
 <li>Click on the drop down menu next to the R project icon (top right corner)</li>
-<li>Click <strong>New Project…</strong> &gt; <strong>Version Control</strong> &gt; <strong>Git</strong> &gt; paste your repo’s URL in the <strong>Repository URL:</strong> box and press <strong>Tab</strong> to auto fill the <strong>Project directory name</strong> field (it should automatically be named the same as your GitHub repo). **Browse to select where on your computer you’d like your repo to be saved.</li>
+<li>Click <strong>New Project…</strong> &gt; <strong>Version Control</strong> &gt; <strong>Git</strong> &gt; paste your repo’s URL in the <strong>Repository URL:</strong> box and press <strong>Tab</strong> to auto fill the <strong>Project directory name</strong> field (it should automatically be named the same as your GitHub repo). <strong>Browse</strong> to select where on your computer you’d like your repo to be saved.</li>
 <li>Click <strong>Create Project</strong></li>
 </ol>
 </div>
@@ -283,6 +292,18 @@ Step-by-step instructions for creating and cloning a GitHub repo:
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> create-project <span class="at">--type</span> website</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="1">
+<li><strong>Preview your site</strong> by typing <code>quarto preview</code> in your RStudio Terminal. This will launch a preview of your website in a browser window. So long as you leave the preview running, it will update each time you make / save changes to website files (which makes iterating on your work really easy!). Your repo name will appear as both your navbar and landing page titles alongside some other placeholder text. By default, a second navbar page, titled “About”, is created for you as well.</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/preview-site.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
 </section>

@@ -15,9 +15,9 @@ To follow along, you'll need:
 -   [Git](https://git-scm.com/) installed / configured
 :::
 
-This section reviews the **create remote (i.e. GitHub) repo *first* > clone repo to your local machine to add Quarto website scaffolding files *second*** workflow. If you need / want to instead use the *create a local repo with Quarto website scaffolding files first > create upstream remote (GitHub) repo second* workflow, check out [these instructions](https://ucsb-meds.github.io/creating-quarto-websites/#why-use-the-command-line-to-set-up-your-quarto-website).
+This section reviews the **"create remote (i.e. GitHub) repo *first* > clone repo to your local machine to add Quarto website scaffolding files *second*"** workflow. If you need / want to instead use the *create a local repo with Quarto website scaffolding files first > create upstream remote (GitHub) repo second* workflow, check out [these instructions](https://ucsb-meds.github.io/creating-quarto-websites/#why-use-the-command-line-to-set-up-your-quarto-website).
 
-### STEPS:
+### Steps:
 
 1. **Navigate to the GitHub profile or organization** where you want your website repository (repo) to live (this will likely be the [OHI-Science](https://github.com/OHI-Science) GitHub organization, but certainly doesn't have to be).
 
@@ -31,13 +31,21 @@ This section reviews the **create remote (i.e. GitHub) repo *first* > clone repo
 1. Click on **Repositories tab** in the top menu bar
 2. Click on the green **New repository** button in the upper right-hand corner
 3. Give it a name, and optionally, a short description. Select the radio button for **Public** repo (it should be selected by default). ***DO NOT*** initialize the repo with a README or `.gitignore` (we can add these later). Click **Create repository**.
-4. From your repo’s main page, click the green **Code** button and **copy the URL** to your clipboard
+4. **Copy your repo's URL to your clipboard** (currently, it's an empty repository)
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "80%"
+#| fig-align: "center"
+knitr::include_graphics("media/new-github-repo.png")
+```
 
 **Clone your repo:**
 
 5. Open up RStudio
 6. Click on the drop down menu next to the R project icon (top right corner)
-7. Click **New Project...** > **Version Control** > **Git** > paste your repo's URL in the **Repository URL:** box and press **Tab** to auto fill the **Project directory name** field (it should automatically be named the same as your GitHub repo). **Browse to select where on your computer you'd like your repo to be saved.
+7. Click **New Project...** > **Version Control** > **Git** > paste your repo's URL in the **Repository URL:** box and press **Tab** to auto fill the **Project directory name** field (it should automatically be named the same as your GitHub repo). **Browse** to select where on your computer you'd like your repo to be saved.
 8. Click **Create Project**
 :::
 
@@ -49,4 +57,12 @@ This section reviews the **create remote (i.e. GitHub) repo *first* > clone repo
 quarto create-project --type website
 ```
 
+4. **Preview your site** by typing `quarto preview` in your RStudio Terminal. This will launch a preview of your website in a browser window. So long as you leave the preview running, it will update each time you make / save changes to website files (which makes iterating on your work really easy!). By default, your repo name will appear as both your navbar and landing page titles, alongside some other placeholder text. A second navbar page, titled "About", is created for you as well.
 
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "80%"
+#| fig-align: "center"
+knitr::include_graphics("media/preview-site.png")
+```
