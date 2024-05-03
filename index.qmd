@@ -1,0 +1,47 @@
+---
+title: "QUARTO FOR DOCUMENTING OHI METHODS" # "Quarto for documenting OHI methods" 
+subtitle: "A short intro to building, deploying, and customizing Quarto websites"
+# description: "Photo © Cingular | Shutterstock"
+author: 
+  - name: Sam Csik
+    url: https://samanthacsik.github.io/
+    orcid: 0000-0002-5300-3075
+date: May 17, 2024
+format: 
+  html:
+    theme: OHI-styles.scss
+    title-block-banner: "media/fish.png" # "#E3F1F2"
+    title-block-banner-color: "#E3F1F2"
+    toc: true
+    toc-location: left
+    toc-depth: 2
+---
+
+<br>
+
+*This document is based on teaching material originally developed for the Bren School of Environmental Science & Management’s [Master of Environmental Data Science](https://bren.ucsb.edu/masters-programs/master-environmental-data-science/academics-meds) (MEDS) program. Check out [Creating your personal website using Quarto](https://ucsb-meds.github.io/creating-quarto-websites/), [Customizing Quarto websites](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide), and [Adding a blog to your existing Quarto website](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/) for additional information and examples.* 
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics("media/OHI-logo.jpeg")
+```
+
+{{< include /sections/1-what-is-quarto.qmd >}}
+
+{{< include /sections/2-create-scaffolding.qmd >}}
+
+{{< include /sections/3-website-layout.qmd >}}
+
+## Build & publish your website using GitHub Pages 
+
+## Updating colors & fonts using Sass 
+
+<br>
+
+::: {.center-text .body-text-s .gray-text}
+*Banner image: Photo © Cingular | Shutterstock*
+:::
+
