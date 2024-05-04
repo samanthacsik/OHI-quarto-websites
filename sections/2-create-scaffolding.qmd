@@ -23,7 +23,7 @@ This section reviews the **"create remote (i.e. GitHub) repo *first* > clone rep
 
 2. **Create and clone a GitHub repository** following the instructions, below. *Importantly, choose your repo name carefully*, as it'll become a part of the website's URL, once deployed (e.g. a repo named `my-awesome-repo` that lives in the `OHI-Science` organization will have a base URL, *https://OHI-Science/my-awesome-repo*).
 
-::: {.callout-tip collapse=true}
+::: {.callout-tip}
 ## Step-by-step instructions for creating and cloning a GitHub repo:
 
 **Create a GitHub (aka remote) repo:** 
@@ -57,7 +57,7 @@ knitr::include_graphics("media/new-github-repo.png")
 quarto create-project --type website
 ```
 
-4. **Preview your site** by typing `quarto preview` in your RStudio Terminal. This will launch a preview of your website in a browser window. So long as you leave the preview running, it will update each time you make / save changes to website files (which makes iterating on your work really easy!). By default, your repo name will appear as both your navbar and landing page titles, alongside some other placeholder text. A second navbar page, titled "About", is created for you as well.
+4. **Preview your site** by typing `quarto preview` in your RStudio Terminal. This will launch a preview of your website in a browser window. So long as you leave the preview running, it will update each time you make and save changes to website files (which makes iterating on your work really easy!). By default, your repo name (here, my repo title is `OHI-methods-EXAMPLE`) will appear as both your navbar and landing page titles, alongside some other placeholder text. A second navbar page, titled "About", is created for you as well.
 
 ```{r}
 #| eval: true
@@ -66,3 +66,8 @@ quarto create-project --type website
 #| fig-align: "center"
 knitr::include_graphics("media/preview-site.png")
 ```
+
+::: {.center-text .gray-text}
+*Previewing our website in the browser by running `quarto preview` in the RStudio Terminal*
+:::
+

@@ -1,0 +1,51 @@
+---
+format: html
+---
+
+## {{< fa arrow-pointer title="A computer mouse cursor" >}} Add pages and configure your website's navigation menus
+
+Quarto is quite flexible, supporting a variety of website navigation options, including top navigation (navbar), side navigation (sidebar), or a combination of the two. This next section will provide examples for getting started with both navbar and sidebar navigation.
+
+**Let's say we want to create a website that houses OHI methodology and includes pages that describe the following (this example is loosely based off the [Ocean Health Index 2022: Methods](https://oceanhealthindex.org/images/htmls/Supplement.html) document, which contains *many* more sections than we'll recreate here):**
+
+- an intro / background to the global OHI assessment
+- defining regions of interest
+- models used, including (a) regional and global index scores, (b) goal scores, and (c) likely future status dimensions
+- references
+
+### First, create some new pages
+
+Creating new pages is as simple as adding new `.qmd` files to your repo (click **Blank File > Quarto Document**). These may live in your repo's root directory, or you may organize them within subdirectories (though note that `index.qmd` should always remain in your root directory; if you organize your other pages inside a subdirectory, that subdirectory name will become a part of your URL). 
+
+::: {.callout-note collapse=true}
+## Data science jargon: Directory == Folder
+Throughout this document, we'll use the words **(sub)directory** and **folder** interchangeably.
+:::
+
+Here, we'll add all of our new website pages to our repo's root directory, following these steps: 
+
+1. **Navigate to your root directory (if you're not already there)** from RStudio's **Files pane**
+2. **Create a new `.qmd` file inside your root directory** by clicking **Blank File > Quarto Document** and giving it a name.
+3. **Add any necessary YAML options to the top of each new page.** For now, we'll just add the `title` option for each new page.
+
+Repeat the above steps to create each of the following `.qmd` files:
+
+- `regions.qmd` (with title, `"Regions"`)
+- `models.qmd` (with title, `"Models"`)
+- `index-scores.qmd` (with title, `"Regional and global index scores"`)
+- `goal-scores.qmd` (with title, `"Goal scores"`)
+- `future-dimensions.qmd` (with title, `"Likely future status dimensions"`)
+- `references.qmd` (with title, `"References"`)
+
+At this stage, the above pages will be "hidden," meaning that they are not accessible through our website's navigation menu, but can be accessed using a direct link (e.g. **https://OHI-methods-EXAMPLE/regions.html**, **localhost:XXXX/regions.html**). Our next important step is to add them to our website's navigation menu in `_quarto.yml` -- how this looks will depend on which type of navigation (e.g. navbar, sidebar) menu we want. See more below!
+
+### Top navigation (navbar)
+
+By default, Quarto creates a website with a navbar. 
+
+### Side navigation (sidebar)
+
+### Bonus: page footer
+
+
+

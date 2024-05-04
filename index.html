@@ -132,15 +132,17 @@ background-size: cover;
   <ul class="collapse">
   <li><a href="#fa-circle-question-titlequestion-mark-what-is-quarto" id="toc-fa-circle-question-titlequestion-mark-what-is-quarto" class="nav-link active" data-scroll-target="#fa-circle-question-titlequestion-mark-what-is-quarto"><i class="fa-solid fa-circle-question" title="Question mark" aria-label="circle-question"></i> What is Quarto?</a></li>
   <li><a href="#fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" id="toc-fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" class="nav-link" data-scroll-target="#fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website"><i class="fa-solid fa-seedling" title="Sprouted seedling" aria-label="seedling"></i> Create the scaffolding for your website</a></li>
-  <li><a href="#fa-arrow-pointer-titlea-computer-mouse-cursor-update-your-website-layout" id="toc-fa-arrow-pointer-titlea-computer-mouse-cursor-update-your-website-layout" class="nav-link" data-scroll-target="#fa-arrow-pointer-titlea-computer-mouse-cursor-update-your-website-layout"><i class="fa-solid fa-arrow-pointer" title="A computer mouse cursor" aria-label="arrow-pointer"></i> Update your website layout</a></li>
-  <li><a href="#build-publish-your-website-using-github-pages" id="toc-build-publish-your-website-using-github-pages" class="nav-link" data-scroll-target="#build-publish-your-website-using-github-pages">Build &amp; publish your website using GitHub Pages</a></li>
+  <li><a href="#fa-map-location-dot-titlea-map-with-a-location-marker-a-quick-tour-of-our-website-files" id="toc-fa-map-location-dot-titlea-map-with-a-location-marker-a-quick-tour-of-our-website-files" class="nav-link" data-scroll-target="#fa-map-location-dot-titlea-map-with-a-location-marker-a-quick-tour-of-our-website-files"><i class="fa-solid fa-map-location-dot" title="A map with a location marker" aria-label="map-location-dot"></i> A quick tour of our website files</a></li>
+  <li><a href="#fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus" id="toc-fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus" class="nav-link" data-scroll-target="#fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus"><i class="fa-solid fa-arrow-pointer" title="A computer mouse cursor" aria-label="arrow-pointer"></i> Add pages and configure your website’s navigation menus</a></li>
+  <li><a href="#fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages" id="toc-fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages" class="nav-link" data-scroll-target="#fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages"><i class="fa-brands fa-github" title="The GitHub Octocat" aria-label="github"></i> Build &amp; publish your website using GitHub Pages</a></li>
   <li><a href="#updating-colors-fonts-using-sass" id="toc-updating-colors-fonts-using-sass" class="nav-link" data-scroll-target="#updating-colors-fonts-using-sass">Updating colors &amp; fonts using Sass</a></li>
+  <li><a href="#adding-images-responsive-columns-etc." id="toc-adding-images-responsive-columns-etc." class="nav-link" data-scroll-target="#adding-images-responsive-columns-etc.">Adding images, responsive columns, etc.</a></li>
   </ul>
 </nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
 </div>
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
@@ -220,6 +222,7 @@ A side-by-side comparison of <code>.rmd</code> vs.&nbsp;<code>.qmd</code> files
 <p><em><svg aria-label="Palette" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#5A5A5A;overflow:visible;position:relative;"><title>Palette</title><path d="M512 256c0 .9 0 1.8 0 2.7c-.4 36.5-33.6 61.3-70.1 61.3H344c-26.5 0-48 21.5-48 48c0 3.4 .4 6.7 1 9.9c2.1 10.2 6.5 20 10.8 29.9c6.1 13.8 12.1 27.5 12.1 42c0 31.8-21.6 60.7-53.4 62c-3.5 .1-7 .2-10.6 .2C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256zM128 288a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm0-96a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM288 96a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 96a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"></path></svg> Art by <a href="https://twitter.com/allison_horst">Allison Horst</a>. Be sure to check out the rest of Allison’s seriously cute Quarto penguin art in the #rstudioconf2022 keynote talk, <a href="https://mine.quarto.pub/hello-quarto/#/hello-quarto-title">Hello Quarto</a>, by <a href="https://twitter.com/juliesquid">Julie Lowndes</a> &amp; <a href="https://twitter.com/minebocek">Mine Çetinkaya-Rundel</a>!</em></p>
 </div>
 <p>You can explore <a href="https://quarto.org/docs/guide/">Quarto’s documentation</a> to learn more about creating documents, websites, blogs, books, slides, dashboards, etc.</p>
+<p>This document provides guidance on getting started with Quarto for building websites. We’ll create a basic website, add and arrange pages in naviagation menus, use <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown syntax</a> to write web page content, customize website appearance using Sass, and deploy using GitHub Pages.</p>
 </section>
 <section id="fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" class="level2">
 <h2 class="anchored" data-anchor-id="fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website"><i class="fa-solid fa-seedling" title="Sprouted seedling" aria-label="seedling"></i> Create the scaffolding for your website</h2>
@@ -250,16 +253,14 @@ Before getting started…
 <li><p><strong>Create and clone a GitHub repository</strong> following the instructions, below. <em>Importantly, choose your repo name carefully</em>, as it’ll become a part of the website’s URL, once deployed (e.g.&nbsp;a repo named <code>my-awesome-repo</code> that lives in the <code>OHI-Science</code> organization will have a base URL, <em>https://OHI-Science/my-awesome-repo</em>).</p></li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Step-by-step instructions for creating and cloning a GitHub repo:
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong>Create a GitHub (aka remote) repo:</strong></p>
 <ol type="1">
@@ -286,7 +287,6 @@ Step-by-step instructions for creating and cloning a GitHub repo:
 </ol>
 </div>
 </div>
-</div>
 <ol start="3" type="1">
 <li><strong>Add Quarto website scaffolding files</strong> by running the following in your RStudio Terminal. Doing so will create the essential default website files (<code>_quarto.yml</code>, <code>.gitignore</code>, <code>index.qmd</code>, <code>about.qmd</code>, <code>styles.css</code>):</li>
 </ol>
@@ -294,7 +294,7 @@ Step-by-step instructions for creating and cloning a GitHub repo:
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> create-project <span class="at">--type</span> website</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="4" type="1">
-<li><strong>Preview your site</strong> by typing <code>quarto preview</code> in your RStudio Terminal. This will launch a preview of your website in a browser window. So long as you leave the preview running, it will update each time you make / save changes to website files (which makes iterating on your work really easy!). Your repo name will appear as both your navbar and landing page titles alongside some other placeholder text. By default, a second navbar page, titled “About”, is created for you as well.</li>
+<li><strong>Preview your site</strong> by typing <code>quarto preview</code> in your RStudio Terminal. This will launch a preview of your website in a browser window. So long as you leave the preview running, it will update each time you make and save changes to website files (which makes iterating on your work really easy!). By default, your repo name (here, my repo title is <code>OHI-methods-EXAMPLE</code>) will appear as both your navbar and landing page titles, alongside some other placeholder text. A second navbar page, titled “About”, is created for you as well.</li>
 </ol>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -305,16 +305,261 @@ Step-by-step instructions for creating and cloning a GitHub repo:
 </div>
 </div>
 </div>
+<div class="center-text gray-text">
+<p><em>Previewing our website in the browser by running <code>quarto preview</code> in the RStudio Terminal</em></p>
+</div>
 </section>
 </section>
-<section id="fa-arrow-pointer-titlea-computer-mouse-cursor-update-your-website-layout" class="level2">
-<h2 class="anchored" data-anchor-id="fa-arrow-pointer-titlea-computer-mouse-cursor-update-your-website-layout"><i class="fa-solid fa-arrow-pointer" title="A computer mouse cursor" aria-label="arrow-pointer"></i> Update your website layout</h2>
+<section id="fa-map-location-dot-titlea-map-with-a-location-marker-a-quick-tour-of-our-website-files" class="level2">
+<h2 class="anchored" data-anchor-id="fa-map-location-dot-titlea-map-with-a-location-marker-a-quick-tour-of-our-website-files"><i class="fa-solid fa-map-location-dot" title="A map with a location marker" aria-label="map-location-dot"></i> A quick tour of our website files</h2>
+<p>When you create a new Quarto website, a handful of files are generated by default:</p>
+<ol type="1">
+<li><strong><code>index.qmd</code> renders your website’s landing page.</strong> Whatever you add to this file will be the first content visitors see when they visit your site. Update the content of <code>index.qmd</code> (or any other website page) using markdown and / or HTML (you can mix and match both on the same page), add and execute code chunks and embed outputs, etc.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Do <em>not</em> change the name of <code>index.qmd</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is the default / expected name given to website landing / home pages. If you change the name of this file, you risk breaking your deployment.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li><strong><code>about.qmd</code> is a regular ’ole website page.</strong> You’re able to change both the name of this file (e.g.&nbsp;change <code>about.qmd</code> to <code>my-new-name.qmd</code>) and / or the title of the file by updating its YAML – by default, the YAML only includes a title:</li>
+</ol>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>about.qmd</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"About"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+YAML controls a page’s appearance and behavior
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><a href="https://en.wikipedia.org/wiki/YAML">YAML</a> is a human-readable data serialization language, which is commonly used for creating configuration files. Quarto recognizes <em>lots</em> of different <a href="https://quarto.org/docs/reference/formats/html.html">YAML options</a> for controlling the appearance and behavior of your individual website pages. YAML is always written at the top of a <code>.qmd</code> file and is denoted by a pair of “gates”, <code>---</code>.</p>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li><strong><code>_quarto.yml</code> is your website configuration file.</strong> Any document rendered within your project directory will automatically inherit the metadata defined in this project-level configuration file (though you can control metadata on a page-by-page basis by making edits to an individual page’s YAML, which will override any options specified in <code>_quarto.yml</code>). Importantly, this is where you define your website’s structure (e.g.&nbsp;your navbar, sidebar, footer, etc.). By default, your file should look similar to this:</li>
+</ol>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>_quarto.yml</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"OHI-methods-EXAMPLE"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  navbar<span class="sc">:</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    left<span class="sc">:</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> about.qmd</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p><strong><code>styles.css</code> is a stylesheet, where you can write CSS rules to alter the appearance of your website.</strong> We’ll actually create and use a different type of stylesheet (called a “sassy css file”, <code>.scss</code>) in a bit.</p></li>
+<li><p><strong><a href="https://git-scm.com/docs/gitignore#:~:text=A%20gitignore%20file%20specifies%20intentionally,gitignore%20file%20specifies%20a%20pattern."><code>.gitignore</code></a> is a place where we can specify any files that we don’t want Git to track (i.e.&nbsp;that we want Git to ignore).</strong> This is not a “Quarto thing,” but rather a valuable file that lives inside <code>git</code> directories. One common use is to add any large data files that you don’t want to accidentally push to GitHub (GitHub isn’t designed to handle LARGE files).</p></li>
+<li><p><strong>The <code>_site/</code> directory is where all of your rendered HTML (and other important) files live.</strong> When you render your site, Quarto takes all of your <code>.qmd</code> files and converts them to <code>.html</code> files, and saves them to this folder (which is important because web browsers don’t know how to read <code>.qmd</code> files, but <em>do</em> know how to read <code>.html</code> files). We’re actually going to change the name of this folder once we configure our website for deployment, but <code>_site</code> is the default name that Quarto uses (we can leave as-is, for now). You don’t want to physically edit or move any files inside this directory (if you want to make a change to your website, update the <code>.qmd</code> or <code>_quarto.yml</code> file, then re-render).</p></li>
+</ol>
 </section>
-<section id="build-publish-your-website-using-github-pages" class="level2">
-<h2 class="anchored" data-anchor-id="build-publish-your-website-using-github-pages">Build &amp; publish your website using GitHub Pages</h2>
+<section id="fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus" class="level2">
+<h2 class="anchored" data-anchor-id="fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus"><i class="fa-solid fa-arrow-pointer" title="A computer mouse cursor" aria-label="arrow-pointer"></i> Add pages and configure your website’s navigation menus</h2>
+<p>Quarto is quite flexible, supporting a variety of website navigation options, including top navigation (navbar), side navigation (sidebar), or a combination of the two. This next section will provide examples for getting started with both navbar and sidebar navigation.</p>
+<p><strong>Let’s say we want to create a website that houses OHI methodology and includes pages that describe the following (this example is loosely based off the <a href="https://oceanhealthindex.org/images/htmls/Supplement.html">Ocean Health Index 2022: Methods</a> document, which contains <em>many</em> more sections than we’ll recreate here):</strong></p>
+<ul>
+<li>an intro / background to the global OHI assessment</li>
+<li>defining regions of interest</li>
+<li>models used, including (a) regional and global index scores, (b) goal scores, and (c) likely future status dimensions</li>
+<li>references</li>
+</ul>
+<section id="first-create-some-new-pages" class="level3">
+<h3 class="anchored" data-anchor-id="first-create-some-new-pages">First, create some new pages</h3>
+<p>Creating new pages is as simple as adding new <code>.qmd</code> files to your repo (click <strong>Blank File &gt; Quarto Document</strong>). These may live in your repo’s root directory, or you may organize them within subdirectories (though note that <code>index.qmd</code> should always remain in your root directory; if you organize your other pages inside a subdirectory, that subdirectory name will become a part of your URL).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Data science jargon: Directory == Folder
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Throughout this document, we’ll use the words <strong>(sub)directory</strong> and <strong>folder</strong> interchangeably.</p>
+</div>
+</div>
+</div>
+<p>Here, we’ll add all of our new website pages to our repo’s root directory, following these steps:</p>
+<ol type="1">
+<li><strong>Navigate to your root directory (if you’re not already there)</strong> from RStudio’s <strong>Files pane</strong></li>
+<li><strong>Create a new <code>.qmd</code> file inside your root directory</strong> by clicking <strong>Blank File &gt; Quarto Document</strong> and giving it a name.</li>
+<li><strong>Add any necessary YAML options to the top of each new page.</strong> For now, we’ll just add the <code>title</code> option for each new page.</li>
+</ol>
+<p>Repeat the above steps to create each of the following <code>.qmd</code> files:</p>
+<ul>
+<li><code>regions.qmd</code> (with title, <code>"Regions"</code>)</li>
+<li><code>models.qmd</code> (with title, <code>"Models"</code>)</li>
+<li><code>index-scores.qmd</code> (with title, <code>"Regional and global index scores"</code>)</li>
+<li><code>goal-scores.qmd</code> (with title, <code>"Goal scores"</code>)</li>
+<li><code>future-dimensions.qmd</code> (with title, <code>"Likely future status dimensions"</code>)</li>
+<li><code>references.qmd</code> (with title, <code>"References"</code>)</li>
+</ul>
+<p>At this stage, the above pages will be “hidden,” meaning that they are not accessible through our website’s navigation menu, but can be accessed using a direct link (e.g.&nbsp;<strong>https://OHI-methods-EXAMPLE/regions.html</strong>, <strong>localhost:XXXX/regions.html</strong>). Our next important step is to add them to our website’s navigation menu in <code>_quarto.yml</code> – how this looks will depend on which type of navigation (e.g.&nbsp;navbar, sidebar) menu we want. See more below!</p>
+</section>
+<section id="top-navigation-navbar" class="level3">
+<h3 class="anchored" data-anchor-id="top-navigation-navbar">Top navigation (navbar)</h3>
+<p>By default, Quarto creates a website with a navbar.</p>
+</section>
+<section id="side-navigation-sidebar" class="level3">
+<h3 class="anchored" data-anchor-id="side-navigation-sidebar">Side navigation (sidebar)</h3>
+</section>
+<section id="bonus-page-footer" class="level3">
+<h3 class="anchored" data-anchor-id="bonus-page-footer">Bonus: page footer</h3>
+</section>
+</section>
+<section id="fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages"><i class="fa-brands fa-github" title="The GitHub Octocat" aria-label="github"></i> Build &amp; publish your website using GitHub Pages</h2>
+<p>There are a <a href="https://quarto.org/docs/publishing/">lots of options to publish your website</a>. We’ll use the <a href="https://quarto.org/docs/publishing/github-pages.html">GitHub Pages option</a>, which allows you to publish a website from any GitHub repository. To do so, there are a few configuration steps:</p>
+<ol type="1">
+<li><p><strong>Create a file named <code>.nojekyll</code> in your repository’s root directory (e.g.&nbsp;<code>OHI-methods-EXAMPLE/</code>)</strong>, which is required to disable some processing of HTML files that GitHub does by default. There are two ways you can do this:</p>
+<ol type="a">
+<li>In your RStudio <strong>Terminal</strong>, type the following command:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> .nojekyll</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="a">
+<li>From RStudio’s <strong>File pane</strong>, click <strong>New Blank File</strong> &gt; <strong>Text File</strong>, then type in <code>.nojekyll</code>.</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Creating “non-standard” file types in RStudio (like a <code>.nojekyll</code> file)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The <code>touch</code> command can be used to create a new, empty file from the command line. Similarly, RStudio’s <strong>Text File</strong> button allows you to define and create any file type. Since there’s no default button in RStudio for creating a <code>.nojekyll</code> file, you’ll want to use one of these two approaches.</p>
+<p><code>.nojekyll</code> is a <em>hidden</em> file which won’t visibly appear in your directory. You <em>should</em> see it show up as a file to track with git (either under the <strong>Git</strong> tab in RStudio, or when you run <code>git status</code> in the command line). You can also view hidden files in Finder (Mac) using the keyboard shortcut <code>Command</code> + <code>Shift</code> + <code>.</code>, or follow <a href="https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2">these instructions</a> for Windows 10, 8.1, and 7.</p>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li><strong>Set the <code>output-dir</code> in your <code>_quarto.yml</code> file to <code>docs</code></strong> (it’s easiest to open and edit this from RStudio):</li>
+</ol>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>_quarto.yml</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  output<span class="sc">-</span>dir<span class="sc">:</span> docs</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># ~ additional metadata excluded for brevity ~</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Your rendered website pages will be saved to <code>output-dir</code> (here, that’s the <code>docs/</code> folder)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The <code>output-dir</code> is the directory (i.e.&nbsp;folder) where your rendered <code>.html</code> (and other important) files will automatically be saved to when you “Build” your website (see the next step!) – that is, when you convert all your <code>.qmd</code> files to the <code>.html</code> files that your web browser can interpret / display.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+You can delete <code>_site/</code> if it exists and if you’re publishing with GitHub Pages
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you previewed or built your site <em>before</em> setting <code>output-dir</code> to <code>docs</code> in <code>_quarto.yml</code>, you’ll notice a <code>_site/</code> directory inside your repository – this is the default output directory name. Because GitHub Pages will expect a <code>docs/</code> folder to deploy from, you can delete <code>_site/</code> altogether (and push your deletion, if you’ve already committed / pushed <code>_site/</code> to GitHub).</p>
+</div>
+</div>
+<ol start="3" type="1">
+<li><strong>Build / render your website.</strong> Click on the <strong>Build</strong> tab (top left pane in RStudio if you have the default layout), then <strong>Render Website.</strong> You should see a minimal, albeit functional, soon-to-be website appear in the <strong>Viewer</strong> tab. Click on the <img src="media/view_in_browser.png" alt="A browser window overlaid by an arrow pointing up and angled to the right." style="display: inline-block; margin: 0; position: relative; top: 0px; width:25px;height:20px;"> button to open your file in your web browser. <strong>Note:</strong> your website is currently being hosted by your local machine, not at a searchable URL. We’ll get there soon though!</li>
+</ol>
+<p>IMAGE HERE</p>
+<ol start="4" type="1">
+<li><p><strong>Send all of your website files from your local git repository to your remote GitHub repository:</strong></p>
+<ol type="a">
+<li><strong>Stage</strong> your files by checking all the boxes in the <strong>Git</strong> tab (<em>this is analogous to the <code>git add .</code> command used in the Terminal for staging all files</em>)</li>
+<li><strong>Commit</strong> your files by clicking the Commit button, adding a commit message, and clicking “Commit” (<em>analogous to <code>git commit -m "my commit message"</code></em>)</li>
+<li><strong>Push</strong> your files to the remote repository (on GitHub) by clicking the “Push” button with the green upward facing arrow (<em>analogous to <code>git push</code></em>).</li>
+</ol></li>
+<li><p><strong>Configure GitHub pages to serve content from the “docs” directory</strong> by clicking on the <strong>Settings</strong> tab in the top menu bar, then the <strong>Pages</strong> tab from the left-hand menu bar. Make sure that <strong>Branch</strong> is set to <code>main</code> and that the selected folder is set to <code>/docs</code>. Click <strong>Save</strong>. Once deployed (this may take a few minutes), your website’s URL will appear inside a box at the top of the page (you may have to try refreshing a few times).</p></li>
+</ol>
+<div class="cell column-page quarto-layout-panel">
+
+</div>
+<p>IMAGES HERE</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Check out the <strong>Actions</strong> tab on GitHub to view deployment status
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>See deployment status, time of each deployment, and how long it took to deploy each run. You can also find failed deployments here (yes, it does happen on occasion) and take action on fixing them.</p>
+<p>IMAGE HERE</p>
+</div>
+</div>
 </section>
 <section id="updating-colors-fonts-using-sass" class="level2">
 <h2 class="anchored" data-anchor-id="updating-colors-fonts-using-sass">Updating colors &amp; fonts using Sass</h2>
+</section>
+<section id="adding-images-responsive-columns-etc." class="level2">
+<h2 class="anchored" data-anchor-id="adding-images-responsive-columns-etc.">Adding images, responsive columns, etc.</h2>
 <p><br></p>
 <div class="center-text body-text-s gray-text">
 <p><em>Banner image: Photo © Cingular | Shutterstock</em></p>

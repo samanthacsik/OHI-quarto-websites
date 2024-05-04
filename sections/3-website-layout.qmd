@@ -1,7 +1,0 @@
----
-format: html
----
-
-## {{< fa arrow-pointer title="A computer mouse cursor" >}} Update your website's layout
-
-<!-- Quarto is quite flexible -->
