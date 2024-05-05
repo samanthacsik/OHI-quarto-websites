@@ -31,7 +31,6 @@ Here, we'll add all of our new website pages to our repo's root directory, follo
 Repeat the above steps to create each of the following `.qmd` files:
 
 - `regions.qmd` (with title, `"Regions"`)
-- `models.qmd` (with title, `"Models"`)
 - `index-scores.qmd` (with title, `"Regional and global index scores"`)
 - `goal-scores.qmd` (with title, `"Goal scores"`)
 - `future-dimensions.qmd` (with title, `"Likely future status dimensions"`)
@@ -41,11 +40,153 @@ At this stage, the above pages will be "hidden," meaning that they are not acces
 
 ### Top navigation (navbar)
 
-By default, Quarto creates a website with a navbar. 
+By default, Quarto creates a website with a navbar. Here, we'll add our new files to our navbar. We can also remove files from our navbar by commenting them out or deleting them completely (e.g. here, I removed `about.qmd`, which was there by default; until I delete `about.qmd` from the repo entirely, it'll remain a hidden page):
+
+```{r filename="_quarto.yml"}
+#| eval: false
+#| echo: true
+#| code-line-numbers: false
+project:
+  type: website
+
+website:
+  title: "OHI-methods-EXAMPLE"
+  navbar:
+    left: # <1>
+      - href: index.qmd # <2>
+        text: Home # <2>
+      - regions.qmd # <3>
+      - text: Models # <4>
+        menu: # <4>
+          - index-scores.qmd # <4>
+          - goal-scores.qmd # <4>
+          - future-dimensions.qmd # <4>
+      - references.qmd # <3>
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+```
+1. Set your navbar pages on the `left` or `right`
+2. By default, the navbar page name is the same as the `title` set in that `.qmd`'s YAML. If you want the navbar page name to be *different* than the page title, declare the navbar page name using `text`.
+3. Newly added navbar pages
+4. A navbar item with sub menu pages
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("media/new-navbar-pages.png")
+```
+
+::: {.center-text .gray-text}
+*Newly added navbar pages. Clicking on the "Models" navbar item reveals a sub menu of pages.*
+:::
 
 ### Side navigation (sidebar)
 
-### Bonus: page footer
+A sidebar is a great option if you have *lots* of documents which require a deep hierarchy of pages.
 
+```{r filename="_quarto.yml"}
+#| eval: false
+#| echo: true
+#| code-line-numbers: false
+project:
+  type: website
 
+website:
+  title: "OHI-methods-EXAMPLE"
+  sidebar:
+    style: "docked" # <1>
+    search: true # <2>
+    contents: # <3>
+      - href: index.qmd # <3>
+        text: Home # <3>
+      - regions.qmd # <3>
+      - section: Models # <3>
+        contents: # <4>
+          - index-scores.qmd # <4>
+          - goal-scores.qmd # <4>
+          - future-dimensions.qmd # <4>
+      - references.qmd # <3>
 
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+```
+1. Choose from `"docked"` or `"floating"`
+2. Remove search bar by setting `style` to `false`
+3. All top level pages or sections fall under this first `contents` section
+4. Create a sub menu by adding `contents` beneath a `section` header
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("media/sidebar-1sub.png")
+```
+
+::: {.center-text .gray-text}
+*Newly added sidebar pages with the "Models" section expand to reveal sub menu pages.*
+:::
+
+Let's say we want to recreate [this sub menu](https://oceanhealthindex.org/images/htmls/Supplement.html#53_Likely_future_status_dimensions) as it appears in the [Ocean Health Index 2022: Methods](https://oceanhealthindex.org/images/htmls/Supplement.html) document. I'll first add three additional pages, `trend.qmd`, `pressure.qmd`, `resilience.qmd`, which we'll include as sub menu items beneath the section header, **Likely future status dimensions**:
+
+```{r filename="_quarto.yml"}
+#| eval: false
+#| echo: true
+#| code-line-numbers: false
+project:
+  type: website
+
+website:
+  title: "OHI-methods-EXAMPLE"
+  sidebar:
+    style: "docked" 
+    search: true
+    contents: 
+      - href: index.qmd
+        text: Home
+      - regions.qmd
+      - section: Models
+        contents: 
+          - index-scores.qmd
+          - goal-scores.qmd
+          - section: Likely future status dimensions # <1>
+            contents: # <1>
+              - trend.qmd # <1>
+              - pressure.qmd # <1>
+              - resilience.qmd # <1>
+      - references.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+```
+1. Here, we converted the old `future-dimensions.qmd` into a section header with the same title, **Likely future status dimensions**. Expanding it reveals three new pages, **Trend**, **Pressure**, and **Resilience**.
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("media/sidebar-2sub.png")
+```
+
+::: {.center-text .gray-text}
+*Caption*
+:::
+
+We can add additional sub menus following the pattern above.
+
+### Learn more
+
+This was only a brief introduction to website navigation! Check out the [Quarto documentation](https://quarto.org/docs/websites/website-navigation.html#side-navigation) for more details, options, and examples.

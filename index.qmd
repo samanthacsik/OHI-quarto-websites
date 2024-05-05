@@ -13,7 +13,8 @@ format:
     title-block-banner-color: "#E3F1F2"
     toc: true
     toc-location: left
-    toc-depth: 2
+    toc-depth: 3
+    smooth-scroll: true
 ---
 
 <br>
@@ -37,6 +38,12 @@ knitr::include_graphics("media/OHI-logo.jpeg")
 {{< include /sections/4-website-navigation.qmd >}}
 
 {{< include /sections/5-publish-website.qmd >}}
+
+## Additional `_quarto.yml` configurations
+
+- full page
+- update title
+- footer
 
 ## Updating colors & fonts using Sass 
 

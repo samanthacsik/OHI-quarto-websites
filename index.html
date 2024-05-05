@@ -71,6 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<style>html{ scroll-behavior: smooth; }</style>
 <style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -129,12 +130,22 @@ background-size: cover;
   <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#fa-circle-question-titlequestion-mark-what-is-quarto" id="toc-fa-circle-question-titlequestion-mark-what-is-quarto" class="nav-link active" data-scroll-target="#fa-circle-question-titlequestion-mark-what-is-quarto"><i class="fa-solid fa-circle-question" title="Question mark" aria-label="circle-question"></i> What is Quarto?</a></li>
-  <li><a href="#fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" id="toc-fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" class="nav-link" data-scroll-target="#fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website"><i class="fa-solid fa-seedling" title="Sprouted seedling" aria-label="seedling"></i> Create the scaffolding for your website</a></li>
+  <li><a href="#fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" id="toc-fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" class="nav-link" data-scroll-target="#fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website"><i class="fa-solid fa-seedling" title="Sprouted seedling" aria-label="seedling"></i> Create the scaffolding for your website</a>
+  <ul class="collapse">
+  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps:</a></li>
+  </ul></li>
   <li><a href="#fa-map-location-dot-titlea-map-with-a-location-marker-a-quick-tour-of-our-website-files" id="toc-fa-map-location-dot-titlea-map-with-a-location-marker-a-quick-tour-of-our-website-files" class="nav-link" data-scroll-target="#fa-map-location-dot-titlea-map-with-a-location-marker-a-quick-tour-of-our-website-files"><i class="fa-solid fa-map-location-dot" title="A map with a location marker" aria-label="map-location-dot"></i> A quick tour of our website files</a></li>
-  <li><a href="#fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus" id="toc-fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus" class="nav-link" data-scroll-target="#fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus"><i class="fa-solid fa-arrow-pointer" title="A computer mouse cursor" aria-label="arrow-pointer"></i> Add pages and configure your website’s navigation menus</a></li>
+  <li><a href="#fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus" id="toc-fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus" class="nav-link" data-scroll-target="#fa-arrow-pointer-titlea-computer-mouse-cursor-add-pages-and-configure-your-websites-navigation-menus"><i class="fa-solid fa-arrow-pointer" title="A computer mouse cursor" aria-label="arrow-pointer"></i> Add pages and configure your website’s navigation menus</a>
+  <ul class="collapse">
+  <li><a href="#first-create-some-new-pages" id="toc-first-create-some-new-pages" class="nav-link" data-scroll-target="#first-create-some-new-pages">First, create some new pages</a></li>
+  <li><a href="#top-navigation-navbar" id="toc-top-navigation-navbar" class="nav-link" data-scroll-target="#top-navigation-navbar">Top navigation (navbar)</a></li>
+  <li><a href="#side-navigation-sidebar" id="toc-side-navigation-sidebar" class="nav-link" data-scroll-target="#side-navigation-sidebar">Side navigation (sidebar)</a></li>
+  <li><a href="#learn-more" id="toc-learn-more" class="nav-link" data-scroll-target="#learn-more">Learn more</a></li>
+  </ul></li>
   <li><a href="#fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages" id="toc-fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages" class="nav-link" data-scroll-target="#fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages"><i class="fa-brands fa-github" title="The GitHub Octocat" aria-label="github"></i> Build &amp; publish your website using GitHub Pages</a></li>
+  <li><a href="#additional-_quarto.yml-configurations" id="toc-additional-_quarto.yml-configurations" class="nav-link" data-scroll-target="#additional-_quarto.yml-configurations">Additional <code>_quarto.yml</code> configurations</a></li>
   <li><a href="#updating-colors-fonts-using-sass" id="toc-updating-colors-fonts-using-sass" class="nav-link" data-scroll-target="#updating-colors-fonts-using-sass">Updating colors &amp; fonts using Sass</a></li>
   <li><a href="#adding-images-responsive-columns-etc." id="toc-adding-images-responsive-columns-etc." class="nav-link" data-scroll-target="#adding-images-responsive-columns-etc.">Adding images, responsive columns, etc.</a></li>
   </ul>
@@ -160,7 +171,7 @@ background-size: cover;
 </div>
 <section id="fa-circle-question-titlequestion-mark-what-is-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="fa-circle-question-titlequestion-mark-what-is-quarto"><i class="fa-solid fa-circle-question" title="Question mark" aria-label="circle-question"></i> What is Quarto?</h2>
-<p><a href="https://quarto.org/">Quarto</a> is a publishing system built on Pandoc that allows users to create dynamic content using R, Python, Julia, and ObservableJS (with plans to add more languages too!).</p>
+<p><a href="https://quarto.org/">Quarto</a> is a publishing system built on <a href="https://pandoc.org/">Pandoc</a> that allows users to create dynamic content using R, Python, Julia, and ObservableJS (with plans to add more languages too!).</p>
 <p>R users have long loved <a href="https://rmarkdown.rstudio.com/">RMarkdown</a> for combining prose, code, and outputs into single “knitted” documents. Quarto extends all of RMarkdown’s best features (plus many more!) to additional languages.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -428,7 +439,6 @@ Data science jargon: Directory == Folder
 <p>Repeat the above steps to create each of the following <code>.qmd</code> files:</p>
 <ul>
 <li><code>regions.qmd</code> (with title, <code>"Regions"</code>)</li>
-<li><code>models.qmd</code> (with title, <code>"Models"</code>)</li>
 <li><code>index-scores.qmd</code> (with title, <code>"Regional and global index scores"</code>)</li>
 <li><code>goal-scores.qmd</code> (with title, <code>"Goal scores"</code>)</li>
 <li><code>future-dimensions.qmd</code> (with title, <code>"Likely future status dimensions"</code>)</li>
@@ -438,13 +448,196 @@ Data science jargon: Directory == Folder
 </section>
 <section id="top-navigation-navbar" class="level3">
 <h3 class="anchored" data-anchor-id="top-navigation-navbar">Top navigation (navbar)</h3>
-<p>By default, Quarto creates a website with a navbar.</p>
+<p>By default, Quarto creates a website with a navbar. Here, we’ll add our new files to our navbar. We can also remove files from our navbar by commenting them out or deleting them completely (e.g.&nbsp;here, I removed <code>about.qmd</code>, which was there by default; until I delete <code>about.qmd</code> from the repo entirely, it’ll remain a hidden page):</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>_quarto.yml</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="annotated-cell-4" data-code-line-numbers="false"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
+<span id="annotated-cell-4-5"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"OHI-methods-EXAMPLE"</span></span>
+<span id="annotated-cell-4-6"><a href="#annotated-cell-4-6" aria-hidden="true" tabindex="-1"></a>  navbar<span class="sc">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-4-7" class="code-annotation-target"><a href="#annotated-cell-4-7" aria-hidden="true" tabindex="-1"></a>    left<span class="sc">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-4-8" class="code-annotation-target"><a href="#annotated-cell-4-8" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
+<span id="annotated-cell-4-9"><a href="#annotated-cell-4-9" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="3" onclick="event.preventDefault();" href="">3</a><span id="annotated-cell-4-10" class="code-annotation-target"><a href="#annotated-cell-4-10" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> regions.qmd</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="4" onclick="event.preventDefault();" href="">4</a><span id="annotated-cell-4-11" class="code-annotation-target"><a href="#annotated-cell-4-11" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> text<span class="sc">:</span> Models</span>
+<span id="annotated-cell-4-12"><a href="#annotated-cell-4-12" aria-hidden="true" tabindex="-1"></a>        menu<span class="sc">:</span></span>
+<span id="annotated-cell-4-13"><a href="#annotated-cell-4-13" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> index<span class="sc">-</span>scores.qmd</span>
+<span id="annotated-cell-4-14"><a href="#annotated-cell-4-14" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> goal<span class="sc">-</span>scores.qmd</span>
+<span id="annotated-cell-4-15"><a href="#annotated-cell-4-15" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> future<span class="sc">-</span>dimensions.qmd</span>
+<span id="annotated-cell-4-16"><a href="#annotated-cell-4-16" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> references.qmd</span>
+<span id="annotated-cell-4-17"><a href="#annotated-cell-4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-4-18"><a href="#annotated-cell-4-18" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="annotated-cell-4-19"><a href="#annotated-cell-4-19" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="annotated-cell-4-20"><a href="#annotated-cell-4-20" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
+<span id="annotated-cell-4-21"><a href="#annotated-cell-4-21" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="annotated-cell-4-22"><a href="#annotated-cell-4-22" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-annotation="1" data-code-lines="7">Set your navbar pages on the <code>left</code> or <code>right</code></span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-annotation="2" data-code-lines="8,9">By default, the navbar page name is the same as the <code>title</code> set in that <code>.qmd</code>’s YAML. If you want the navbar page name to be <em>different</em> than the page title, declare the navbar page name using <code>text</code>.</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-annotation="3" data-code-lines="10,16">Newly added navbar pages</span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-annotation="4" data-code-lines="11,12,13,14,15">A navbar item with sub menu pages</span>
+</dd>
+</dl>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/new-navbar-pages.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="center-text gray-text">
+<p><em>Newly added navbar pages. Clicking on the “Models” navbar item reveals a sub menu of pages.</em></p>
+</div>
 </section>
 <section id="side-navigation-sidebar" class="level3">
 <h3 class="anchored" data-anchor-id="side-navigation-sidebar">Side navigation (sidebar)</h3>
+<p>A sidebar is a great option if you have <em>lots</em> of documents which require a deep hierarchy of pages.</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>_quarto.yml</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="annotated-cell-5" data-code-line-numbers="false"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-5-1"><a href="#annotated-cell-5-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="annotated-cell-5-2"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="annotated-cell-5-3"><a href="#annotated-cell-5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-4"><a href="#annotated-cell-5-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
+<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"OHI-methods-EXAMPLE"</span></span>
+<span id="annotated-cell-5-6"><a href="#annotated-cell-5-6" aria-hidden="true" tabindex="-1"></a>  sidebar<span class="sc">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-5-7" class="code-annotation-target"><a href="#annotated-cell-5-7" aria-hidden="true" tabindex="-1"></a>    style<span class="sc">:</span> <span class="st">"docked"</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-5-8" class="code-annotation-target"><a href="#annotated-cell-5-8" aria-hidden="true" tabindex="-1"></a>    search<span class="sc">:</span> true</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3" onclick="event.preventDefault();" href="">3</a><span id="annotated-cell-5-9" class="code-annotation-target"><a href="#annotated-cell-5-9" aria-hidden="true" tabindex="-1"></a>    contents<span class="sc">:</span></span>
+<span id="annotated-cell-5-10"><a href="#annotated-cell-5-10" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
+<span id="annotated-cell-5-11"><a href="#annotated-cell-5-11" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
+<span id="annotated-cell-5-12"><a href="#annotated-cell-5-12" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> regions.qmd</span>
+<span id="annotated-cell-5-13"><a href="#annotated-cell-5-13" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> section<span class="sc">:</span> Models</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="4" onclick="event.preventDefault();" href="">4</a><span id="annotated-cell-5-14" class="code-annotation-target"><a href="#annotated-cell-5-14" aria-hidden="true" tabindex="-1"></a>        contents<span class="sc">:</span></span>
+<span id="annotated-cell-5-15"><a href="#annotated-cell-5-15" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> index<span class="sc">-</span>scores.qmd</span>
+<span id="annotated-cell-5-16"><a href="#annotated-cell-5-16" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> goal<span class="sc">-</span>scores.qmd</span>
+<span id="annotated-cell-5-17"><a href="#annotated-cell-5-17" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> future<span class="sc">-</span>dimensions.qmd</span>
+<span id="annotated-cell-5-18"><a href="#annotated-cell-5-18" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> references.qmd</span>
+<span id="annotated-cell-5-19"><a href="#annotated-cell-5-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-5-20"><a href="#annotated-cell-5-20" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="annotated-cell-5-21"><a href="#annotated-cell-5-21" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="annotated-cell-5-22"><a href="#annotated-cell-5-22" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
+<span id="annotated-cell-5-23"><a href="#annotated-cell-5-23" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="annotated-cell-5-24"><a href="#annotated-cell-5-24" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-annotation="1" data-code-lines="7">Choose from <code>"docked"</code> or <code>"floating"</code></span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-annotation="2" data-code-lines="8">Remove search bar by setting <code>style</code> to <code>false</code></span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-annotation="3" data-code-lines="9,10,11,12,13,18">All top level pages or sections fall under this first <code>contents</code> section</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="4">4</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-annotation="4" data-code-lines="14,15,16,17">Create a sub menu by adding <code>contents</code> beneath a <code>section</code> header</span>
+</dd>
+</dl>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/sidebar-1sub.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="center-text gray-text">
+<p><em>Newly added sidebar pages with the “Models” section expand to reveal sub menu pages.</em></p>
+</div>
+<p>Let’s say we want to recreate <a href="https://oceanhealthindex.org/images/htmls/Supplement.html#53_Likely_future_status_dimensions">this sub menu</a> as it appears in the <a href="https://oceanhealthindex.org/images/htmls/Supplement.html">Ocean Health Index 2022: Methods</a> document. I’ll first add three additional pages, <code>trend.qmd</code>, <code>pressure.qmd</code>, <code>resilience.qmd</code>, which we’ll include as sub menu items beneath the section header, <strong>Likely future status dimensions</strong>:</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>_quarto.yml</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="annotated-cell-6" data-code-line-numbers="false"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-6-1"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="annotated-cell-6-2"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="annotated-cell-6-3"><a href="#annotated-cell-6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-6-4"><a href="#annotated-cell-6-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
+<span id="annotated-cell-6-5"><a href="#annotated-cell-6-5" aria-hidden="true" tabindex="-1"></a>  title<span class="sc">:</span> <span class="st">"OHI-methods-EXAMPLE"</span></span>
+<span id="annotated-cell-6-6"><a href="#annotated-cell-6-6" aria-hidden="true" tabindex="-1"></a>  sidebar<span class="sc">:</span></span>
+<span id="annotated-cell-6-7"><a href="#annotated-cell-6-7" aria-hidden="true" tabindex="-1"></a>    style<span class="sc">:</span> <span class="st">"docked"</span> </span>
+<span id="annotated-cell-6-8"><a href="#annotated-cell-6-8" aria-hidden="true" tabindex="-1"></a>    search<span class="sc">:</span> true</span>
+<span id="annotated-cell-6-9"><a href="#annotated-cell-6-9" aria-hidden="true" tabindex="-1"></a>    contents<span class="sc">:</span> </span>
+<span id="annotated-cell-6-10"><a href="#annotated-cell-6-10" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
+<span id="annotated-cell-6-11"><a href="#annotated-cell-6-11" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
+<span id="annotated-cell-6-12"><a href="#annotated-cell-6-12" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> regions.qmd</span>
+<span id="annotated-cell-6-13"><a href="#annotated-cell-6-13" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> section<span class="sc">:</span> Models</span>
+<span id="annotated-cell-6-14"><a href="#annotated-cell-6-14" aria-hidden="true" tabindex="-1"></a>        contents<span class="sc">:</span> </span>
+<span id="annotated-cell-6-15"><a href="#annotated-cell-6-15" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> index<span class="sc">-</span>scores.qmd</span>
+<span id="annotated-cell-6-16"><a href="#annotated-cell-6-16" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> goal<span class="sc">-</span>scores.qmd</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-6-17" class="code-annotation-target"><a href="#annotated-cell-6-17" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> section<span class="sc">:</span> Likely future status dimensions</span>
+<span id="annotated-cell-6-18"><a href="#annotated-cell-6-18" aria-hidden="true" tabindex="-1"></a>            contents<span class="sc">:</span></span>
+<span id="annotated-cell-6-19"><a href="#annotated-cell-6-19" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> trend.qmd</span>
+<span id="annotated-cell-6-20"><a href="#annotated-cell-6-20" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> pressure.qmd</span>
+<span id="annotated-cell-6-21"><a href="#annotated-cell-6-21" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> resilience.qmd</span>
+<span id="annotated-cell-6-22"><a href="#annotated-cell-6-22" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> references.qmd</span>
+<span id="annotated-cell-6-23"><a href="#annotated-cell-6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-6-24"><a href="#annotated-cell-6-24" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="annotated-cell-6-25"><a href="#annotated-cell-6-25" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="annotated-cell-6-26"><a href="#annotated-cell-6-26" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
+<span id="annotated-cell-6-27"><a href="#annotated-cell-6-27" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
+<span id="annotated-cell-6-28"><a href="#annotated-cell-6-28" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> true</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-6" data-code-annotation="1" data-code-lines="17,18,19,20,21">Here, we converted the old <code>future-dimensions.qmd</code> into a section header with the same title, <strong>Likely future status dimensions</strong>. Expanding it reveals three new pages, <strong>Trend</strong>, <strong>Pressure</strong>, and <strong>Resilience</strong>.</span>
+</dd>
+</dl>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="media/sidebar-2sub.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="center-text gray-text">
+<p><em>Caption</em></p>
+</div>
+<p>We can add additional sub menus following the pattern above.</p>
 </section>
-<section id="bonus-page-footer" class="level3">
-<h3 class="anchored" data-anchor-id="bonus-page-footer">Bonus: page footer</h3>
+<section id="learn-more" class="level3">
+<h3 class="anchored" data-anchor-id="learn-more">Learn more</h3>
+<p>This was only a brief introduction to website navigation! Check out the <a href="https://quarto.org/docs/websites/website-navigation.html#side-navigation">Quarto documentation</a> for more details, options, and examples.</p>
 </section>
 </section>
 <section id="fa-brands-github-titlethe-github-octocat-build-publish-your-website-using-github-pages" class="level2 page-columns page-full">
@@ -554,6 +747,14 @@ Check out the <strong>Actions</strong> tab on GitHub to view deployment status
 <p>IMAGE HERE</p>
 </div>
 </div>
+</section>
+<section id="additional-_quarto.yml-configurations" class="level2">
+<h2 class="anchored" data-anchor-id="additional-_quarto.yml-configurations">Additional <code>_quarto.yml</code> configurations</h2>
+<ul>
+<li>full page</li>
+<li>update title</li>
+<li>footer</li>
+</ul>
 </section>
 <section id="updating-colors-fonts-using-sass" class="level2">
 <h2 class="anchored" data-anchor-id="updating-colors-fonts-using-sass">Updating colors &amp; fonts using Sass</h2>
@@ -805,4 +1006,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="index_files/libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
