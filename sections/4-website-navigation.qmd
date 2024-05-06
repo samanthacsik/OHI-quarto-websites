@@ -50,8 +50,8 @@ project:
   type: website
 
 website:
-  title: "OHI-methods-EXAMPLE"
   navbar:
+    title: "OHI-methods-EXAMPLE"
     left: # <1>
       - href: index.qmd # <2>
         text: Home # <2>
@@ -98,8 +98,8 @@ project:
   type: website
 
 website:
-  title: "OHI-methods-EXAMPLE"
   sidebar:
+    title: "OHI-methods-EXAMPLE"
     style: "docked" # <1>
     search: true # <2>
     contents: # <3>
@@ -146,8 +146,8 @@ project:
   type: website
 
 website:
-  title: "OHI-methods-EXAMPLE"
   sidebar:
+    title: "OHI-methods-EXAMPLE"
     style: "docked" 
     search: true
     contents: 
@@ -171,7 +171,7 @@ format:
     css: styles.css
     toc: true
 ```
-1. Here, we converted the old `future-dimensions.qmd` into a section header with the same title, **Likely future status dimensions**. Expanding it reveals three new pages, **Trend**, **Pressure**, and **Resilience**.
+1. Here, we converted the old `future-dimensions.qmd` into a section header with the same title, **Likely future status dimensions**. Expanding it reveals its contents -- three new pages, **Trend**, **Pressure**, and **Resilience**.
 
 ```{r}
 #| eval: true
@@ -182,7 +182,7 @@ knitr::include_graphics("media/sidebar-2sub.png")
 ```
 
 ::: {.center-text .gray-text}
-*Caption*
+*Newly added section titled, "Likely future status dimensions." Expanding this section reveals our three new pages, "Trend," "Pressure," and "Resilience."*
 :::
 
 We can add additional sub menus following the pattern above.

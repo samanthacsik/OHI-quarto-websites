@@ -1,0 +1,98 @@
+---
+format: html
+---
+
+## {{< fa gear title="A gear" >}} Additional `_quarto.yml` configurations
+
+The `_quarto.yml` file is a place to make lots of additional updates to website appearance / configurations. Here, we'll review just a few places to make easy and valuable updates. Check out the [Quarto documentation](https://quarto.org/docs/websites/website-tools.html) for additional available tooling options.
+
+Before we make updates to `_quarto.yml`, let's add some background information to our landing page, `index.qmd` (copied from [Ocean Health Index 2022: Methods](https://oceanhealthindex.org/images/htmls/Supplement.html#1_Introduction_to_the_global_Ocean_Health_Index_(OHI)_assessment)). We can also update our `title` to something more informative than our repo name (which was set by default):
+
+```{markdown}
+#| eval: false
+#| echo: true
+---
+title: "Ocean Health Index 2024: Methods"
+---
+
+## Introduction to the global Ocean Health Index (OHI) assessment
+
+The global Ocean Health Index assesses ocean health for 220 coastal countries and territories and has been conducted every year starting in 2012. The Index describes how well we are sustainably managing 10 goals for ocean ecosystems which represent the full suite of benefits that people want and need from the ocean. These goals include: artisanal fishing opportunity, biodiversity, carbon storage, clean waters, coastal livelihoods and economies, coastal protection, food provision, natural products, sense of place, and tourism and recreation. Each goal is given a score ranging from 0 to 100, and the full suite of goal scores are then averaged to obtain an overall index score for each region.
+
+For more information about the philosophy of the Ocean Health Index and model development see Halpern et al. (2012, 2015) and <http://ohi-science.org/ohi-global/>, which includes information about downloading global ocean health data.
+```
+
+The website should look similar to this, when previewed:
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics("media/updated-index.png")
+```
+
+::: {.center-text .gray-text}
+*Our new landing page, with an updated title and text.*  
+:::
+
+A few adjustments to our `_quarto.yml` can improve our website's appearance:
+
+```{r filename="_quarto.yml"}
+#| eval: false
+#| echo: true
+#| code-line-numbers: false
+project:
+  type: website
+
+website:
+  sidebar:
+    title: "OHI Methods (2024)" # <1> 
+    style: "docked" 
+    search: true
+    contents: 
+      - href: index.qmd
+        text: Home
+      - regions.qmd
+      - section: Models
+        contents: 
+          - index-scores.qmd
+          - goal-scores.qmd
+          - section: Likely future status dimensions
+            contents:
+              - trend.qmd
+              - pressure.qmd
+              - resilience.qmd
+      - references.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false # <2> 
+    page-layout: full # <3>
+```
+1. Update the website `title`
+2. Remove Table of Contents from all pages (though you can enable TOC on a page-by-page basis by setting `toc: true` in the YAML of individual `.qmd` files)
+3. Allow text / content to fill the entire page
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics("media/prettier-config.png")
+```
+
+::: {.center-text .gray-text}
+*Our latest revisions.*
+:::
+
+
+
+
+
+
+
+
+- footer

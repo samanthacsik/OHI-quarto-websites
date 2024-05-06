@@ -1,6 +1,6 @@
 ---
 title: "QUARTO FOR DOCUMENTING OHI METHODS" 
-subtitle: "A short intro to building, deploying, and customizing Quarto websites"
+subtitle: "An intro to building, deploying, and customizing Quarto websites"
 author: 
   - name: Sam Csik
     url: https://samanthacsik.github.io/
@@ -37,13 +37,9 @@ knitr::include_graphics("media/OHI-logo.jpeg")
 
 {{< include /sections/4-website-navigation.qmd >}}
 
-{{< include /sections/5-publish-website.qmd >}}
+{{< include /sections/5-quarto-yml-configs.qmd >}}
 
-## Additional `_quarto.yml` configurations
-
-- full page
-- update title
-- footer
+{{< include /sections/6-publish-website.qmd >}}
 
 ## Updating colors & fonts using Sass 
 
