@@ -9,7 +9,7 @@ date: May 17, 2024
 format: 
   html:
     theme: OHI-styles.scss
-    title-block-banner: "media/fish.png" # "#E3F1F2"
+    title-block-banner: "media/fish.png" 
     title-block-banner-color: "#E3F1F2"
     toc: true
     toc-location: left
@@ -28,6 +28,8 @@ format:
 #| out-width: "100%"
 knitr::include_graphics("media/OHI-logo.jpeg")
 ```
+
+{{< include /sections/0-how-to.qmd >}}
 
 {{< include /sections/1-what-is-quarto.qmd >}}
 

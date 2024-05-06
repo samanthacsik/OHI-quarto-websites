@@ -9,7 +9,7 @@ format: html
 R users have long loved [RMarkdown](https://rmarkdown.rstudio.com/) for combining prose, code, and outputs into single "knitted" documents. Quarto extends all of RMarkdown's best features (plus many more!) to additional languages.
 
 ::: {.callout-note collapse=true}
-## A side-by-side comparison of `.rmd` vs. `.qmd` files
+## **A side-by-side comparison of `.rmd` vs. `.qmd` files**
 If you're already an avid RMarkdown user, great news! RMarkdown (`.rmd`) and Quarto Markdown (`.qmd`) files look super similar:
 
 -  document-level metadata and configurations are included in the document's YAML (denoted by the `---` gates at the top of the document)

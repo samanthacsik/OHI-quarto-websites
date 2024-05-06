@@ -6,6 +6,8 @@ format: html
 
 The `_quarto.yml` file is a place to make lots of additional updates to website appearance / configurations. Here, we'll review just a few places to make easy and valuable updates. Check out the [Quarto documentation](https://quarto.org/docs/websites/website-tools.html) for additional available tooling options.
 
+::: {.callout-important}
+## **Add content to your landing page (`index.qmd`) before continuing on!**
 Before we make updates to `_quarto.yml`, let's add some background information to our landing page, `index.qmd` (copied from [Ocean Health Index 2022: Methods](https://oceanhealthindex.org/images/htmls/Supplement.html#1_Introduction_to_the_global_Ocean_Health_Index_(OHI)_assessment)). We can also update our `title` to something more informative than our repo name (which was set by default):
 
 ```{markdown}
@@ -34,6 +36,8 @@ knitr::include_graphics("media/updated-index.png")
 
 ::: {.center-text .gray-text}
 *Our new landing page, with an updated title and text.*  
+:::
+
 :::
 
 A few adjustments to our `_quarto.yml` can improve our website's appearance:

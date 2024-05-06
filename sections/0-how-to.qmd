@@ -1,0 +1,24 @@
+---
+format: html
+---
+
+## {{< fa lightbulb title="Lightbulb">}} Some tips on navigating this document
+
+This document is meant to introduce Quarto as a tool and framework for building websites. It has been tailored (from it's [previous version](https://ucsb-meds.github.io/creating-quarto-websites/)) to serve [Ocean Health Index](https://oceanhealthindex.org/) (OHI) [fellows](https://oceanhealthindex.org/about/ohifellows/) in building websites to organize, house, and better share OHI methodology.
+
+We'll walk through the steps of creating the essential building blocks of any Quarto website, configuring website navigation menus, deploying a website (for free) using GitHub Pages, using Sass to update website fonts and colors, and a few other helpful tips and tricks. The content covered here is only an introduction to the wonderful suite of tooling that Quarto provides! I encourage you to also explore [Posit](https://posit.co/)'s incredible [Quarto documentation](https://quarto.org/), as well as the seemingly endless list of awesome resources created by other Quarto users. 
+
+You'll encounter some callout boxes throughout these materials, which are meant to provide additional tips, considerations, contexts:
+
+::: {.callout-note collapse=true}
+## Note (collapsed by default to minimize scrolling; click to expand)
+This is a **note**, often providing additional context, clarification, resources, etc.
+:::
+
+::: {.callout-tip}
+This is a **tip**, with suggested workflows, organizational tips, additional tools, etc.
+:::
+
+::: {.callout-important}
+This is **important text** -- be sure to read these carefully as to not miss any important steps!
+:::

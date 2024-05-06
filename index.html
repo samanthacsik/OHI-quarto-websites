@@ -131,7 +131,8 @@ background-size: cover;
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#fa-circle-question-titlequestion-mark-what-is-quarto" id="toc-fa-circle-question-titlequestion-mark-what-is-quarto" class="nav-link active" data-scroll-target="#fa-circle-question-titlequestion-mark-what-is-quarto"><i class="fa-solid fa-circle-question" title="Question mark" aria-label="circle-question"></i> What is Quarto?</a></li>
+  <li><a href="#fa-lightbulb-titlelightbulb-some-tips-on-navigating-this-document" id="toc-fa-lightbulb-titlelightbulb-some-tips-on-navigating-this-document" class="nav-link active" data-scroll-target="#fa-lightbulb-titlelightbulb-some-tips-on-navigating-this-document"><i class="fa-solid fa-lightbulb" title="Lightbulb" aria-label="lightbulb"></i> Some tips on navigating this document</a></li>
+  <li><a href="#fa-circle-question-titlequestion-mark-what-is-quarto" id="toc-fa-circle-question-titlequestion-mark-what-is-quarto" class="nav-link" data-scroll-target="#fa-circle-question-titlequestion-mark-what-is-quarto"><i class="fa-solid fa-circle-question" title="Question mark" aria-label="circle-question"></i> What is Quarto?</a></li>
   <li><a href="#fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" id="toc-fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website" class="nav-link" data-scroll-target="#fa-seedling-titlesprouted-seedling-create-the-scaffolding-for-your-website"><i class="fa-solid fa-seedling" title="Sprouted seedling" aria-label="seedling"></i> Create the scaffolding for your website</a>
   <ul class="collapse">
   <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps:</a></li>
@@ -169,21 +170,69 @@ background-size: cover;
 </div>
 </div>
 </div>
-<section id="fa-circle-question-titlequestion-mark-what-is-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="fa-circle-question-titlequestion-mark-what-is-quarto"><i class="fa-solid fa-circle-question" title="Question mark" aria-label="circle-question"></i> What is Quarto?</h2>
-<p><a href="https://quarto.org/">Quarto</a> is a publishing system built on <a href="https://pandoc.org/">Pandoc</a> that allows users to create dynamic content using R, Python, Julia, and ObservableJS (with plans to add more languages too!).</p>
-<p>R users have long loved <a href="https://rmarkdown.rstudio.com/">RMarkdown</a> for combining prose, code, and outputs into single “knitted” documents. Quarto extends all of RMarkdown’s best features (plus many more!) to additional languages.</p>
+<section id="fa-lightbulb-titlelightbulb-some-tips-on-navigating-this-document" class="level2">
+<h2 class="anchored" data-anchor-id="fa-lightbulb-titlelightbulb-some-tips-on-navigating-this-document"><i class="fa-solid fa-lightbulb" title="Lightbulb" aria-label="lightbulb"></i> Some tips on navigating this document</h2>
+<p>This document is meant to introduce Quarto as a tool and framework for building websites. It has been tailored (from it’s <a href="https://ucsb-meds.github.io/creating-quarto-websites/">previous version</a>) to serve <a href="https://oceanhealthindex.org/">Ocean Health Index</a> (OHI) <a href="https://oceanhealthindex.org/about/ohifellows/">fellows</a> in building websites to organize, house, and better share OHI methodology.</p>
+<p>We’ll walk through the steps of creating the essential building blocks of any Quarto website, configuring website navigation menus, deploying a website (for free) using GitHub Pages, using Sass to update website fonts and colors, and a few other helpful tips and tricks. The content covered here is only an introduction to the wonderful suite of tooling that Quarto provides! I encourage you to also explore <a href="https://posit.co/">Posit</a>’s incredible <a href="https://quarto.org/">Quarto documentation</a>, as well as the seemingly endless list of awesome resources created by other Quarto users.</p>
+<p>You’ll encounter some callout boxes throughout these materials, which are meant to provide additional tips, considerations, contexts:</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-A side-by-side comparison of <code>.rmd</code> vs.&nbsp;<code>.qmd</code> files
+Note (collapsed by default to minimize scrolling; click to expand)
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>This is a <strong>note</strong>, often providing additional context, clarification, resources, etc.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is a <strong>tip</strong>, with suggested workflows, organizational tips, additional tools, etc.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is <strong>important text</strong> – be sure to read these carefully as to not miss any important steps!</p>
+</div>
+</div>
+</section>
+<section id="fa-circle-question-titlequestion-mark-what-is-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="fa-circle-question-titlequestion-mark-what-is-quarto"><i class="fa-solid fa-circle-question" title="Question mark" aria-label="circle-question"></i> What is Quarto?</h2>
+<p><a href="https://quarto.org/">Quarto</a> is a publishing system built on <a href="https://pandoc.org/">Pandoc</a> that allows users to create dynamic content using R, Python, Julia, and ObservableJS (with plans to add more languages too!).</p>
+<p>R users have long loved <a href="https://rmarkdown.rstudio.com/">RMarkdown</a> for combining prose, code, and outputs into single “knitted” documents. Quarto extends all of RMarkdown’s best features (plus many more!) to additional languages.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>A side-by-side comparison of <code>.rmd</code> vs.&nbsp;<code>.qmd</code> files</strong>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>If you’re already an avid RMarkdown user, great news! RMarkdown (<code>.rmd</code>) and Quarto Markdown (<code>.qmd</code>) files look super similar:</p>
 <ul>
@@ -243,7 +292,7 @@ A side-by-side comparison of <code>.rmd</code> vs.&nbsp;<code>.qmd</code> files
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Before getting started…
+<strong>Before getting started…</strong>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -269,7 +318,7 @@ Before getting started…
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Step-by-step instructions for creating and cloning a GitHub repo:
+<strong>Step-by-step instructions for creating and cloning a GitHub repo:</strong>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -333,7 +382,7 @@ Step-by-step instructions for creating and cloning a GitHub repo:
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Do <em>not</em> change the name of <code>index.qmd</code>
+<strong>Do <em>not</em> change the name of <code>index.qmd</code></strong>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -354,16 +403,16 @@ Do <em>not</em> change the name of <code>index.qmd</code>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-YAML controls a page’s appearance and behavior
+<strong>YAML controls a page’s appearance and behavior</strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><a href="https://en.wikipedia.org/wiki/YAML">YAML</a> is a human-readable data serialization language, which is commonly used for creating configuration files. Quarto recognizes <em>lots</em> of different <a href="https://quarto.org/docs/reference/formats/html.html">YAML options</a> for controlling the appearance and behavior of your individual website pages. YAML is always written at the top of a <code>.qmd</code> file and is denoted by a pair of “gates”, <code>---</code>.</p>
 </div>
@@ -415,16 +464,16 @@ YAML controls a page’s appearance and behavior
 <h3 class="anchored" data-anchor-id="first-create-some-new-pages">First, create some new pages</h3>
 <p>Creating new pages is as simple as adding new <code>.qmd</code> files to your repo (click <strong>Blank File &gt; Quarto Document</strong>). These may live in your repo’s root directory, or you may organize them within subdirectories (though note that <code>index.qmd</code> should always remain in your root directory; if you organize your other pages inside a subdirectory, that subdirectory name will become a part of your URL).</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Data science jargon: Directory == Folder
+<strong>Data science jargon: Directory == Folder</strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Throughout this document, we’ll use the words <strong>(sub)directory</strong> and <strong>folder</strong> interchangeably.</p>
 </div>
@@ -436,7 +485,16 @@ Data science jargon: Directory == Folder
 <li><strong>Create a new <code>.qmd</code> file inside your root directory</strong> by clicking <strong>Blank File &gt; Quarto Document</strong> and giving it a name.</li>
 <li><strong>Add any necessary YAML options to the top of each new page.</strong> For now, we’ll just add the <code>title</code> option for each new page.</li>
 </ol>
-<p>Repeat the above steps to create each of the following <code>.qmd</code> files:</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Repeat the above steps to create each of the following <code>.qmd</code> files:</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <ul>
 <li><code>regions.qmd</code> (with title, <code>"Regions"</code>)</li>
 <li><code>index-scores.qmd</code> (with title, <code>"Regional and global index scores"</code>)</li>
@@ -444,6 +502,8 @@ Data science jargon: Directory == Folder
 <li><code>future-dimensions.qmd</code> (with title, <code>"Likely future status dimensions"</code>)</li>
 <li><code>references.qmd</code> (with title, <code>"References"</code>)</li>
 </ul>
+</div>
+</div>
 <p>At this stage, the above pages will be “hidden,” meaning that they are not accessible through our website’s navigation menu, but can be accessed using a direct link (e.g.&nbsp;<strong>https://OHI-methods-EXAMPLE/regions.html</strong>, <strong>localhost:XXXX/regions.html</strong>). Our next important step is to add them to our website’s navigation menu in <code>_quarto.yml</code> – how this looks will depend on which type of navigation (e.g.&nbsp;navbar, sidebar) menu we want. See more below!</p>
 </section>
 <section id="top-navigation-navbar" class="level3">
@@ -575,9 +635,28 @@ Data science jargon: Directory == Folder
 </div>
 </div>
 <div class="center-text gray-text">
-<p><em>Newly added sidebar pages with the “Models” section expand to reveal sub menu pages.</em></p>
+<p><em>Newly added sidebar pages with the “Models” section expanded to reveal sub menu pages.</em></p>
 </div>
-<p>Let’s say we want to recreate <a href="https://oceanhealthindex.org/images/htmls/Supplement.html#53_Likely_future_status_dimensions">this sub menu</a> as it appears in the <a href="https://oceanhealthindex.org/images/htmls/Supplement.html">Ocean Health Index 2022: Methods</a> document. I’ll first add three additional pages, <code>trend.qmd</code>, <code>pressure.qmd</code>, <code>resilience.qmd</code>, which we’ll include as sub menu items beneath the section header, <strong>Likely future status dimensions</strong>:</p>
+<p>Where sidebars really shiny is when you want to create additional nested sub menus – let’s say we want to recreate <a href="https://oceanhealthindex.org/images/htmls/Supplement.html#53_Likely_future_status_dimensions">this sub menu</a> as it appears in the <a href="https://oceanhealthindex.org/images/htmls/Supplement.html">Ocean Health Index 2022: Methods</a> document. We’ll need to add a few more pages, first (see below).</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Add more pages (<code>.qmd</code> files) before creating the next nested sub menu</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Add the following pages to your repo’s root directory:</p>
+<ul>
+<li><code>trend.qmd</code> (with the title, <code>"Trend"</code>)</li>
+<li><code>pressure.qmd</code> (with the title, <code>"Pressure"</code>)</li>
+<li><code>resilience.qmd</code> (with the title, <code>"Resilience"</code>)</li>
+</ul>
+</div>
+</div>
+<p>Now, add your three new pages as sub menu items beneath the section header, <strong>Likely future status dimensions</strong>:</p>
 <div class="cell">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
@@ -643,6 +722,16 @@ Data science jargon: Directory == Folder
 <section id="fa-gear-titlea-gear-additional-_quarto.yml-configurations" class="level2">
 <h2 class="anchored" data-anchor-id="fa-gear-titlea-gear-additional-_quarto.yml-configurations"><i class="fa-solid fa-gear" title="A gear" aria-label="gear"></i> Additional <code>_quarto.yml</code> configurations</h2>
 <p>The <code>_quarto.yml</code> file is a place to make lots of additional updates to website appearance / configurations. Here, we’ll review just a few places to make easy and valuable updates. Check out the <a href="https://quarto.org/docs/websites/website-tools.html">Quarto documentation</a> for additional available tooling options.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<strong>Add content to your landing page (<code>index.qmd</code>) before continuing on!</strong>
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Before we make updates to <code>_quarto.yml</code>, let’s add some background information to our landing page, <code>index.qmd</code> (copied from <a href="https://oceanhealthindex.org/images/htmls/Supplement.html#1_Introduction_to_the_global_Ocean_Health_Index_(OHI)_assessment">Ocean Health Index 2022: Methods</a>). We can also update our <code>title</code> to something more informative than our repo name (which was set by default):</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
@@ -668,55 +757,57 @@ Data science jargon: Directory == Folder
 <div class="center-text gray-text">
 <p><em>Our new landing page, with an updated title and text.</em></p>
 </div>
+</div>
+</div>
 <p>A few adjustments to our <code>_quarto.yml</code> can improve our website’s appearance:</p>
 <div class="cell">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>_quarto.yml</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="annotated-cell-8" data-code-line-numbers="false"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-8-1"><a href="#annotated-cell-8-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
-<span id="annotated-cell-8-2"><a href="#annotated-cell-8-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
-<span id="annotated-cell-8-3"><a href="#annotated-cell-8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-8-4"><a href="#annotated-cell-8-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
-<span id="annotated-cell-8-5"><a href="#annotated-cell-8-5" aria-hidden="true" tabindex="-1"></a>  sidebar<span class="sc">:</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-8" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-8-6" class="code-annotation-target"><a href="#annotated-cell-8-6" aria-hidden="true" tabindex="-1"></a>    title<span class="sc">:</span> <span class="st">"OHI Methods (2024)"</span></span>
-<span id="annotated-cell-8-7"><a href="#annotated-cell-8-7" aria-hidden="true" tabindex="-1"></a>    style<span class="sc">:</span> <span class="st">"docked"</span> </span>
-<span id="annotated-cell-8-8"><a href="#annotated-cell-8-8" aria-hidden="true" tabindex="-1"></a>    search<span class="sc">:</span> true</span>
-<span id="annotated-cell-8-9"><a href="#annotated-cell-8-9" aria-hidden="true" tabindex="-1"></a>    contents<span class="sc">:</span> </span>
-<span id="annotated-cell-8-10"><a href="#annotated-cell-8-10" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
-<span id="annotated-cell-8-11"><a href="#annotated-cell-8-11" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
-<span id="annotated-cell-8-12"><a href="#annotated-cell-8-12" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> regions.qmd</span>
-<span id="annotated-cell-8-13"><a href="#annotated-cell-8-13" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> section<span class="sc">:</span> Models</span>
-<span id="annotated-cell-8-14"><a href="#annotated-cell-8-14" aria-hidden="true" tabindex="-1"></a>        contents<span class="sc">:</span> </span>
-<span id="annotated-cell-8-15"><a href="#annotated-cell-8-15" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> index<span class="sc">-</span>scores.qmd</span>
-<span id="annotated-cell-8-16"><a href="#annotated-cell-8-16" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> goal<span class="sc">-</span>scores.qmd</span>
-<span id="annotated-cell-8-17"><a href="#annotated-cell-8-17" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> section<span class="sc">:</span> Likely future status dimensions</span>
-<span id="annotated-cell-8-18"><a href="#annotated-cell-8-18" aria-hidden="true" tabindex="-1"></a>            contents<span class="sc">:</span></span>
-<span id="annotated-cell-8-19"><a href="#annotated-cell-8-19" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> trend.qmd</span>
-<span id="annotated-cell-8-20"><a href="#annotated-cell-8-20" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> pressure.qmd</span>
-<span id="annotated-cell-8-21"><a href="#annotated-cell-8-21" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> resilience.qmd</span>
-<span id="annotated-cell-8-22"><a href="#annotated-cell-8-22" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> references.qmd</span>
-<span id="annotated-cell-8-23"><a href="#annotated-cell-8-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="annotated-cell-8-24"><a href="#annotated-cell-8-24" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
-<span id="annotated-cell-8-25"><a href="#annotated-cell-8-25" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
-<span id="annotated-cell-8-26"><a href="#annotated-cell-8-26" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
-<span id="annotated-cell-8-27"><a href="#annotated-cell-8-27" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-8" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-8-28" class="code-annotation-target"><a href="#annotated-cell-8-28" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> false</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-8" data-target-annotation="3" onclick="event.preventDefault();" href="">3</a><span id="annotated-cell-8-29" class="code-annotation-target"><a href="#annotated-cell-8-29" aria-hidden="true" tabindex="-1"></a>    page<span class="sc">-</span>layout<span class="sc">:</span> full</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-7" data-code-line-numbers="false"><pre class="sourceCode r code-annotation-code code-with-copy code-annotated"><code class="sourceCode r"><span id="annotated-cell-7-1"><a href="#annotated-cell-7-1" aria-hidden="true" tabindex="-1"></a>project<span class="sc">:</span></span>
+<span id="annotated-cell-7-2"><a href="#annotated-cell-7-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
+<span id="annotated-cell-7-3"><a href="#annotated-cell-7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-7-4"><a href="#annotated-cell-7-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
+<span id="annotated-cell-7-5"><a href="#annotated-cell-7-5" aria-hidden="true" tabindex="-1"></a>  sidebar<span class="sc">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-7-6" class="code-annotation-target"><a href="#annotated-cell-7-6" aria-hidden="true" tabindex="-1"></a>    title<span class="sc">:</span> <span class="st">"OHI Methods (2024)"</span></span>
+<span id="annotated-cell-7-7"><a href="#annotated-cell-7-7" aria-hidden="true" tabindex="-1"></a>    style<span class="sc">:</span> <span class="st">"docked"</span> </span>
+<span id="annotated-cell-7-8"><a href="#annotated-cell-7-8" aria-hidden="true" tabindex="-1"></a>    search<span class="sc">:</span> true</span>
+<span id="annotated-cell-7-9"><a href="#annotated-cell-7-9" aria-hidden="true" tabindex="-1"></a>    contents<span class="sc">:</span> </span>
+<span id="annotated-cell-7-10"><a href="#annotated-cell-7-10" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
+<span id="annotated-cell-7-11"><a href="#annotated-cell-7-11" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
+<span id="annotated-cell-7-12"><a href="#annotated-cell-7-12" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> regions.qmd</span>
+<span id="annotated-cell-7-13"><a href="#annotated-cell-7-13" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> section<span class="sc">:</span> Models</span>
+<span id="annotated-cell-7-14"><a href="#annotated-cell-7-14" aria-hidden="true" tabindex="-1"></a>        contents<span class="sc">:</span> </span>
+<span id="annotated-cell-7-15"><a href="#annotated-cell-7-15" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> index<span class="sc">-</span>scores.qmd</span>
+<span id="annotated-cell-7-16"><a href="#annotated-cell-7-16" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> goal<span class="sc">-</span>scores.qmd</span>
+<span id="annotated-cell-7-17"><a href="#annotated-cell-7-17" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> section<span class="sc">:</span> Likely future status dimensions</span>
+<span id="annotated-cell-7-18"><a href="#annotated-cell-7-18" aria-hidden="true" tabindex="-1"></a>            contents<span class="sc">:</span></span>
+<span id="annotated-cell-7-19"><a href="#annotated-cell-7-19" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> trend.qmd</span>
+<span id="annotated-cell-7-20"><a href="#annotated-cell-7-20" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> pressure.qmd</span>
+<span id="annotated-cell-7-21"><a href="#annotated-cell-7-21" aria-hidden="true" tabindex="-1"></a>              <span class="sc">-</span> resilience.qmd</span>
+<span id="annotated-cell-7-22"><a href="#annotated-cell-7-22" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> references.qmd</span>
+<span id="annotated-cell-7-23"><a href="#annotated-cell-7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="annotated-cell-7-24"><a href="#annotated-cell-7-24" aria-hidden="true" tabindex="-1"></a>format<span class="sc">:</span></span>
+<span id="annotated-cell-7-25"><a href="#annotated-cell-7-25" aria-hidden="true" tabindex="-1"></a>  html<span class="sc">:</span></span>
+<span id="annotated-cell-7-26"><a href="#annotated-cell-7-26" aria-hidden="true" tabindex="-1"></a>    theme<span class="sc">:</span> cosmo</span>
+<span id="annotated-cell-7-27"><a href="#annotated-cell-7-27" aria-hidden="true" tabindex="-1"></a>    css<span class="sc">:</span> styles.css</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-7-28" class="code-annotation-target"><a href="#annotated-cell-7-28" aria-hidden="true" tabindex="-1"></a>    toc<span class="sc">:</span> false</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-7" data-target-annotation="3" onclick="event.preventDefault();" href="">3</a><span id="annotated-cell-7-29" class="code-annotation-target"><a href="#annotated-cell-7-29" aria-hidden="true" tabindex="-1"></a>    page<span class="sc">-</span>layout<span class="sc">:</span> full</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-8" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-lines="6" data-code-cell="annotated-cell-8" data-code-annotation="1">Update the website <code>title</code></span>
+<span data-code-lines="6" data-code-cell="annotated-cell-7" data-code-annotation="1">Update the website <code>title</code></span>
 </dd>
-<dt data-target-cell="annotated-cell-8" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-7" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-lines="28" data-code-cell="annotated-cell-8" data-code-annotation="2">Remove Table of Contents from all pages (though you can enable TOC on a page-by-page basis by setting <code>toc: true</code> in the YAML of individual <code>.qmd</code> files)</span>
+<span data-code-lines="28" data-code-cell="annotated-cell-7" data-code-annotation="2">Remove Table of Contents from all pages (though you can enable TOC on a page-by-page basis by setting <code>toc: true</code> in the YAML of individual <code>.qmd</code> files)</span>
 </dd>
-<dt data-target-cell="annotated-cell-8" data-target-annotation="3">3</dt>
+<dt data-target-cell="annotated-cell-7" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-lines="29" data-code-cell="annotated-cell-8" data-code-annotation="3">Allow text / content to fill the entire page</span>
+<span data-code-lines="29" data-code-cell="annotated-cell-7" data-code-annotation="3">Allow text / content to fill the entire page</span>
 </dd>
 </dl>
 </div>
@@ -753,16 +844,16 @@ Data science jargon: Directory == Folder
 </ol></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Creating “non-standard” file types in RStudio (like a <code>.nojekyll</code> file)
+<strong>Creating “non-standard” file types in RStudio (like a <code>.nojekyll</code> file)</strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The <code>touch</code> command can be used to create a new, empty file from the command line. Similarly, RStudio’s <strong>Text File</strong> button allows you to define and create any file type. Since there’s no default button in RStudio for creating a <code>.nojekyll</code> file, you’ll want to use one of these two approaches.</p>
 <p><code>.nojekyll</code> is a <em>hidden</em> file which won’t visibly appear in your directory. You <em>should</em> see it show up as a file to track with git (either under the <strong>Git</strong> tab in RStudio, or when you run <code>git status</code> in the command line). You can also view hidden files in Finder (Mac) using the keyboard shortcut <code>Command</code> + <code>Shift</code> + <code>.</code>, or follow <a href="https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2">these instructions</a> for Windows 10, 8.1, and 7.</p>
@@ -785,16 +876,16 @@ Creating “non-standard” file types in RStudio (like a <code>.nojekyll</code>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Your rendered website pages will be saved to <code>output-dir</code> (here, that’s the <code>docs/</code> folder)
+<strong>Your rendered website pages will be saved to <code>output-dir</code> (here, that’s the <code>docs/</code> folder)</strong>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The <code>output-dir</code> is the directory (i.e.&nbsp;folder) where your rendered <code>.html</code> (and other important) files will automatically be saved to when you “Build” your website (see the next step!) – that is, when you convert all your <code>.qmd</code> files to the <code>.html</code> files that your web browser can interpret / display.</p>
 </div>
@@ -806,7 +897,7 @@ Your rendered website pages will be saved to <code>output-dir</code> (here, that
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-You can delete <code>_site/</code> if it exists and if you’re publishing with GitHub Pages
+<strong>You can delete <code>_site/</code> if it exists and if you’re publishing with GitHub Pages</strong>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -836,7 +927,7 @@ You can delete <code>_site/</code> if it exists and if you’re publishing with 
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Check out the <strong>Actions</strong> tab on GitHub to view deployment status
+<strong>Check out the <em>Actions</em> tab on GitHub to view deployment status</strong>
 </div>
 </div>
 <div class="callout-body-container callout-body">
