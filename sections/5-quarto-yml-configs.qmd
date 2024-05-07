@@ -94,5 +94,51 @@ knitr::include_graphics("media/prettier-config.png")
 
 ### Adding a logo
 
+Quarto supports images in the navbar / sidebar. Provide an image to the `logo` option in `_quarto.yml`. 
+
+::: {.callout-important}
+## **Download the OHI logo to add as a logo in our website's sidebar!**
+
+You can [download the OHI logo](https://github.com/samanthacsik/OHI-quarto-websites/blob/main/for-download/OHI-logo.png), but also feel free to practice using any image you have easily accessible. 
+:::
+
+```{r filename="_quarto.yml"}
+#| eval: false
+#| echo: true
+#| code-line-numbers: false
+project:
+  type: website
+
+website:
+  sidebar:
+    # title: "OHI Methods (2024)" # <1>
+    logo: media/OHI-logo.png # <2>
+    style: "docked" 
+    search: true
+    contents: 
+      - href: index.qmd
+        text: Home
+      - regions.qmd
+      - section: Models
+        contents: 
+          - index-scores.qmd
+          - goal-scores.qmd
+          - section: Likely future status dimensions
+            contents:
+              - trend.qmd
+              - pressure.qmd
+              - resilience.qmd
+      - references.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    page-layout: full
+```
+1. I decided to remove the website title, but you *can* include both a title and logo (the title will print beneath the logo)
+2. I saved my logo to a folder called `media/`
+
 ### Adding a page footer
 
