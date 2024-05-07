@@ -53,6 +53,3 @@ knitr::include_graphics("media/quarto_schematic.png")
 
 You can explore [Quarto's documentation](https://quarto.org/docs/guide/) to learn more about creating documents, websites, blogs, books, slides, dashboards, etc. 
 
-This document provides guidance on getting started with Quarto for building websites. We'll create a basic website, add and arrange pages in naviagation menus, use [Markdown syntax](https://quarto.org/docs/authoring/markdown-basics.html) to write web page content, customize website appearance using Sass, and deploy using GitHub Pages.
-
-

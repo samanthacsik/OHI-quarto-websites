@@ -15,7 +15,10 @@ To follow along, you'll need:
 -   [Git](https://git-scm.com/) installed / configured
 :::
 
-This section reviews the **"create remote (i.e. GitHub) repo *first* > clone repo to your local machine to add Quarto website scaffolding files *second*"** workflow. If you need / want to instead use the *create a local repo with Quarto website scaffolding files first > create upstream remote (GitHub) repo second* workflow, check out [these instructions](https://ucsb-meds.github.io/creating-quarto-websites/#why-use-the-command-line-to-set-up-your-quarto-website).
+::: {.callout-tip}
+## **A note on order of operations**
+This section reviews the **"create remote (i.e. GitHub) repo *first*, then clone repo to your local machine to add Quarto website scaffolding files *second*"** workflow. If you need / want to instead use the *create a local repo with Quarto website scaffolding files first, then create upstream remote (GitHub) repo second* workflow, check out [these instructions](https://ucsb-meds.github.io/creating-quarto-websites/#why-use-the-command-line-to-set-up-your-quarto-website).
+:::
 
 ### Steps:
 
@@ -57,7 +60,7 @@ knitr::include_graphics("media/new-github-repo.png")
 quarto create-project --type website
 ```
 
-4. **Preview your site** by typing `quarto preview` in your RStudio Terminal. This will launch a preview of your website in a browser window. So long as you leave the preview running, it will update each time you make and save changes to website files (which makes iterating on your work really easy!). By default, your repo name (here, my repo title is `OHI-methods-EXAMPLE`) will appear as both your navbar and landing page titles, alongside some other placeholder text. A second navbar page, titled "About", is created for you as well.
+4. **Preview your site** by typing `quarto preview` in your RStudio Terminal. This will launch a preview of your website in a browser window. So long as you leave the preview running, it will update each time you make and save changes to website files (which makes iterating on your work really easy!). By default, your repo name (here, my repo name is `OHI-methods-EXAMPLE`) will appear as both your navbar and landing page titles, alongside some other placeholder text. A second navbar page, titled "About", is created for you as well.
 
 ```{r}
 #| eval: true

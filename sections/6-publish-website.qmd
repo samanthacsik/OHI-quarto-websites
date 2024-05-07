@@ -46,15 +46,29 @@ The `output-dir` is the directory (i.e. folder) where your rendered `.html` (and
 If you previewed or built your site *before* setting `output-dir` to `docs` in `_quarto.yml`, you'll notice a `_site/` directory inside your repository -- this is the default output directory name. Because GitHub Pages will expect a `docs/` folder to deploy from, you can delete `_site/` altogether (and push your deletion, if you've already committed / pushed `_site/` to GitHub).
 :::
 
-3.  **Build / render your website.** Click on the **Build** tab (top left pane in RStudio if you have the default layout), then **Render Website.** You should see a minimal, albeit functional, soon-to-be website appear in the **Viewer** tab. Click on the <img src="media/view_in_browser.png" alt="A browser window overlaid by an arrow pointing up and angled to the right." style="display: inline-block; margin: 0; position: relative; top: 0px; width:25px;height:20px;"/> button to open your file in your web browser. **Note:** your website is currently being hosted by your local machine, not at a searchable URL. We'll get there soon though!
+3.  **Build / render your website.** Click on the **Build** tab (top left pane in RStudio if you have the default layout), then **Render Website** (alternatively, you can run `quarto render` in the Terminal) -- this command creates the final version of your website documents for deployment. Once rendered, you should see your soon-to-be website appear in the **Viewer** tab. 
+
+<!-- Click on the <img src="media/view_in_browser.png" alt="A browser window overlaid by an arrow pointing up and angled to the right." style="display: inline-block; margin: 0; position: relative; top: 0px; width:25px;height:20px;"/> button to open your file in your web browser. **Note:** your website is currently being hosted by your local machine, not at a searchable URL. We'll get there soon though! -->
+
+::: {.callout-tip}
+## **Close / reopen your project if the Build tab is missing**
+
+If you don't see the **Build** tab, close then reopen your project. It should appear!
 
 ```{r}
+#| eval: true
 #| echo: false
+#| out-width: "100%"
 #| fig-align: center
-# knitr::include_graphics("media/build_site.png")
+knitr::include_graphics("media/build-tab.png")
 ```
+:::
 
-IMAGE HERE
+::: {.callout-important}
+## **You MUST render your website before pushing your files to GitHub!**
+
+Clicking **Render Website** in the Build tab (or running `quarto render` in the Terminal) is a necessary pre-(re)deployment step -- it converts all `.qmd` files to `.html` and ensures that all website components are stitched together correctly. If you do not render your website before pushing your files, your changes will not deploy.
+:::
 
 4.  **Send all of your website files from your local git repository to your remote GitHub repository:** 
 
@@ -71,22 +85,22 @@ IMAGE HERE
 #| fig-subcap: 
 #|  - "Your website's URL will appear at the top of the page once you've configured GitHub pages to host your Quarto site"
 #|  - "A hosted Quarto website! Now time to customize and add content."
-# knitr::include_graphics("media/gh_pages.png")
-# knitr::include_graphics("media/rendered_site.png")
+knitr::include_graphics("media/gh-pages.png")
+knitr::include_graphics("media/deployed-site.png")
 ```
 
-IMAGES HERE
 
 ::: {.callout-tip}
 ## **Check out the *Actions* tab on GitHub to view deployment status**
 
 See deployment status, time of each deployment, and how long it took to deploy each run. You can also find failed deployments here (yes, it does happen on occasion) and take action on fixing them.
 
-IMAGE HERE
-
 ```{r}
+#| eval: true
 #| echo: false
-# knitr::include_graphics("media/actions_tab.png")
+#| out-width: "100%"
+#| fig-align: center
+knitr::include_graphics("media/actions-tab.png")
 ```
 :::
 
