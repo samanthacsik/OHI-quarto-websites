@@ -104,3 +104,11 @@ knitr::include_graphics("media/actions-tab.png")
 ```
 :::
 
+You're now ready to continue iterating on your website and redeploy with ease! Your workflow will look something like this: 
+
+1. Make updates to your website in RStudio (or IDE / text editor of choice)
+2. Re-render your website by either (a) clicking **Render Website** in RStudio's Build tab, or (b) running `quarto render` in the Terminal
+3. Push all of your files to GitHub where GitHub Pages will re-deploy your site with your latest changes
+
+
+

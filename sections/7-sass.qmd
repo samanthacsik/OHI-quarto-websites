@@ -1,0 +1,5 @@
+---
+format: html
+---
+
+## {{< fa palette title="A paint palette" >}} Updating colors & fonts using Sass

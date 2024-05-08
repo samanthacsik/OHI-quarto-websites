@@ -43,9 +43,9 @@ knitr::include_graphics("media/OHI-logo.jpeg")
 
 {{< include /sections/6-publish-website.qmd >}}
 
-## Updating colors & fonts using Sass 
+{{< include /sections/7-sass.qmd >}}
 
-## Adding images, responsive columns, etc.
+{{< include /sections/8-resources.qmd >}}
 
 <br>
 

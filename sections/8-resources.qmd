@@ -1,0 +1,11 @@
+---
+format: html
+---
+
+## {{< fa circle-plus title="A plus sign" >}} Additional resources & tips
+
+- New to Markdown or need a refresher? Review the most commonly used [markdown syntax](https://quarto.org/docs/authoring/markdown-basics.html).
+- Quarto will automatically generate citations and a bibliography in a number of styles(!!) -- check out the [official documentation](https://quarto.org/docs/authoring/footnotes-and-citations.html). I also provide some examples, screenshots, and explanations in [this blog post](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/#creating-a-bibliography-and-adding-citations).
+- Take inspiration from other Quarto websites (and explore their source code)! See something you want to recreate but don't know how? Check out the GitHub repo (which is often linked somewhere on the website). Here are a couple other Quarto websites I've created, which take advantage of custom layouts and other fun Quarto features:
+  - [Openscapes](https://openscapes.org/)
+  - [EDS 240: Data Visualization & Communication](https://samanthacsik.github.io/EDS-240-data-viz/)
