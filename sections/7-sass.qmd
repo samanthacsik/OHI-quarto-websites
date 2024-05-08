@@ -3,3 +3,90 @@ format: html
 ---
 
 ## {{< fa palette title="A paint palette" >}} Updating colors & fonts using Sass
+
+There are a number of ways to update a Quarto website's theme (e.g. colors, fonts), but the (arguably) fastest and easiest way is to define some Sass variables in a `.scss` file (stylesheet), then link to that stylesheet in your `_quarto.yml` metadata. The steps below offer a "quick start guide," though I recommend checking out [these workshop materials](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) on customizing Quarto websites using Sass & CSS for a much deeper dive.
+
+1. **Create a `styles.scss` file** in your repo's root directory (you can name it however you'd like), using the command `touch styles.scss` in the Terminal, or by Blank File > Text File > typing styles.scss from the RStudio Files pane.
+
+2. **Add the `/*-- scss:defaults --*/` region decorator to the top of `styles.scss`** ([required by Quarto](https://quarto.org/docs/output-formats/html-themes-more.html)) – you’ll write all your Sass variables underneath this
+
+```{sass filename="styles.scss"}
+/*-- scss:defaults --*/
+```
+
+3. **Apply your `styles.scss` stylesheet to your website** using the `theme` option in `_quarto.yml`.
+
+```{r filename="_quarto.yml"}
+#| eval: false
+#| echo: true
+project:
+   # ~ additional YAML omitted for brevity ~
+
+website:
+  # ~ additional YAML omitted for brevity ~
+  
+format:
+  html:
+    theme: styles.scss # <1>
+    toc: false
+    page-layout: full
+```
+1. Apply your `styles.scss` stylesheet using the `theme` option
+
+::: {.callout-note collapse="true"}
+## **Comment out / remove `css: styles.css` from `_quarto.yml`**
+
+This tutorial doesn't cover writing CSS, though you *can* (and should) write any CSS in your SCSS file. I recommend removing `styles.css` from `_quarto.yml`. You can also delete `styles.css` from your repo (you can always create a new one if you decide you want / need a `.css` file in the future).
+:::
+
+4. **Define some color variables** using the syntax, `$variable-name: value;`. Here, we define three colors: 
+
+```{sass filename="styles.scss"}
+// Colors
+$baby-blue: #E3F1F2;
+$dark-blue: #252D5C;
+$orange: #F26C25;
+```
+
+::: {.callout-tip}
+## **Use `//` for single line comments in `.scss` files**
+
+You may also create multi-line comments, which start with `/*` and end at the next `*/`.
+:::
+
+5. **Use your color variables as values for [Quarto’s Sass variables](https://quarto.org/docs/output-formats/html-themes.html#sass-variables).** Below, we specify only four, however there are a number of Sass variables which can be defined within SCSS files (find a [list of them here](https://quarto.org/docs/output-formats/html-themes.html#sass-variables)).
+
+```{sass filename="styles.scss"}
+/*-- scss:defaults --*/
+
+// Colors
+$baby-blue: #E3F1F2;
+$dark-blue: #252D5C;
+$orange: #F26C25;
+
+// Sass vars
+$body-bg: $baby-blue;
+$body-color: $dark-blue; 
+$link-color: $orange; 
+$footer-bg: $dark-blue;
+```
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("media/sass-vars-colors.png")
+```
+
+::: {.center-text .gray-text}
+*Your newly styled site should look similar to this (be sure to run `quarto preview` in the Terminal, if it's not already running).*
+:::
+
+6. **Find a Google font**
+
+7. **Import Google font**
+
+8. **Apply your font using the `mainfont` option in _quarto.yml**
+
+
