@@ -21,6 +21,7 @@ $code-color: $orange;
 
 /*-- scss:rules --*/
 
+// Make title font larger
 .quarto-title-banner .quarto-title .title {
     font-weight: 700;
     font-size: xxx-large;
@@ -36,33 +37,6 @@ h1, h2, h3, h4 {
 h2 {
   border-bottom: 3px solid $dark-blue;
   padding-bottom: 0.5rem;
-}
-
-// XL body text
-.body-text-xl {
-  font-size: 30px;
-	line-height: 1.7em;
-	margin-bottom: 1em;
-}
-
-// L body text
-.body-text-l {
-  font-size: 25px;
-	line-height: 1.7em;
-	margin-bottom: 1em;
-}
-
-// M body text
-.body-text-m {
-  font-size: 20px;
-	line-height: 1.7em;
-	margin-bottom: 1em;
-}
-
-// S body text
-.body-text-s {
-  font-size: 14px;
-	line-height: 0.3em;
 }
 
 // gray text
