@@ -165,3 +165,10 @@ knitr::include_graphics("media/updated-font.png")
 
 But this requires a bit more Sass *and* CSS. While we won't get into that here, check out [these workshop materials](https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide) and some "in the wild" examples (e.g. like the stylesheet for [this very instructional document](https://github.com/samanthacsik/OHI-quarto-websites/blob/main/OHI-styles.scss) {{< fa face-smile-wink title="a winking face" >}} ).
 :::
+
+::: {.callout-important}
+## **Don't forget to *Render Website* and push your files back to GitHub, when finished!**
+
+GitHub Pages will then rebuild and redeploy your site at your URL.
+:::
+
