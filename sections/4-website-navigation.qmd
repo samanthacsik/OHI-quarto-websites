@@ -75,7 +75,7 @@ format:
 2. By default, the navbar page name is the same as the `title` set in that `.qmd`'s YAML. If you want the navbar page name to be *different* than the page title, declare the navbar page name using `text`.
 3. Newly added navbar pages
 4. A navbar item with sub menu pages
-5. **Note:** I've moved my `title` beneath `navbar` (by default, it's placed beneath `website` at the same level as `navbar`) -- I think this makes a bit more intuitive sense, since your website `title` is positioned within your `nabar` (or `sidebar`). This new positioning is also important if we decide to add both a website title *and* logo (we'll explore this in a later section).
+5. **Note:** I removed my site-level `title` option and added it instead as a navbar `title`. Functionally, they appear the same way, but organizationally I think this makes more intuitive sense (my title lives inside my `navbar` (or `sidebar`). This new positioning is also important if we decide to add both a website title *and* logo (we'll explore this in a later section).
 
 ```{r}
 #| eval: true
