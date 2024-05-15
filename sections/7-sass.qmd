@@ -8,7 +8,7 @@ There are a number of ways to update a Quarto website's theme (e.g. colors, font
 
 ### Create and apply a `.scss` file / stylesheet
 
-1. **Create a `styles.scss` file** in your repo's root directory (you can name it however you'd like), using the command `touch styles.scss` in the Terminal, or by Blank File > Text File > typing `styles.scss` from the RStudio Files pane.
+1. **Create a `styles.scss` file** in your repo's root directory (you can name it however you'd like), using the command `touch styles.scss` in the Terminal, or by **Blank File** > **Text File** > typing `styles.scss` from the RStudio Files pane.
 
 2. **Add the `/*-- scss:defaults --*/` region decorator to the top of `styles.scss`** ([required by Quarto](https://quarto.org/docs/output-formats/html-themes-more.html)) – you’ll write all your Sass variables underneath this:
 

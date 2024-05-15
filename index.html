@@ -562,23 +562,23 @@ Important
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="7" data-code-annotation="1">(<strong>NOTE: click on the number to the left to highlight the corresponding line(s) of code, above!</strong>) Set your navbar pages on the <code>left</code> or <code>right</code></span>
+<span data-code-cell="annotated-cell-4" data-code-annotation="1" data-code-lines="7">(<strong>NOTE: click on the number to the left to highlight the corresponding line(s) of code, above!</strong>) Set your navbar pages on the <code>left</code> or <code>right</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="8,9" data-code-annotation="2">By default, the navbar page name is the same as the <code>title</code> set in that <code>.qmd</code>’s YAML. If you want the navbar page name to be <em>different</em> than the page title, declare the navbar page name using <code>text</code>.</span>
+<span data-code-cell="annotated-cell-4" data-code-annotation="2" data-code-lines="8,9">By default, the navbar page name is the same as the <code>title</code> set in that <code>.qmd</code>’s YAML. If you want the navbar page name to be <em>different</em> than the page title, declare the navbar page name using <code>text</code>.</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="10,16" data-code-annotation="3">Newly added navbar pages</span>
+<span data-code-cell="annotated-cell-4" data-code-annotation="3" data-code-lines="10,16">Newly added navbar pages</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="11,12,13,14,15" data-code-annotation="4">A navbar item with sub menu pages</span>
+<span data-code-cell="annotated-cell-4" data-code-annotation="4" data-code-lines="11,12,13,14,15">A navbar item with sub menu pages</span>
 </dd>
 <dt data-target-cell="annotated-cell-4" data-target-annotation="5">5</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="5,6" data-code-annotation="5"><strong>Note:</strong> I removed my site-level <code>title</code> option and added it instead as a navbar <code>title</code>. Functionally, they appear the same way, but organizationally I think this makes more intuitive sense (my title lives inside my <code>navbar</code> (or <code>sidebar</code>). This new positioning is also important if we decide to add both a website title <em>and</em> logo (we’ll explore this in a later section).</span>
+<span data-code-cell="annotated-cell-4" data-code-annotation="5" data-code-lines="5,6"><strong>Note:</strong> I removed my site-level <code>title</code> option and added it instead as a navbar <code>title</code>. Functionally, they appear the same way, but organizationally I think this makes more intuitive sense (my title lives inside my <code>navbar</code> (or <code>sidebar</code>)). This new positioning is also important if we decide to add both a website title <em>and</em> logo (we’ll explore this in a later section).</span>
 </dd>
 </dl>
 </div>
@@ -598,7 +598,7 @@ Important
 </section>
 <section id="side-navigation-sidebar" class="level3">
 <h3 class="anchored" data-anchor-id="side-navigation-sidebar">Side navigation (sidebar)</h3>
-<p>A sidebar is a great option if you have <em>lots</em> of documents which require a deep hierarchy of pages.</p>
+<p>A sidebar is a great option if you have <em>lots</em> of documents which require a deep hierarchy of pages. Setting up a sidebar looks very similar to creating a navbar, with the exception of a few slightly different YAML option names:</p>
 <div class="cell">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
@@ -608,16 +608,16 @@ Important
 <span id="annotated-cell-5-2"><a href="#annotated-cell-5-2" aria-hidden="true" tabindex="-1"></a>  type<span class="sc">:</span> website</span>
 <span id="annotated-cell-5-3"><a href="#annotated-cell-5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="annotated-cell-5-4"><a href="#annotated-cell-5-4" aria-hidden="true" tabindex="-1"></a>website<span class="sc">:</span></span>
-<span id="annotated-cell-5-5"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a>  sidebar<span class="sc">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-5-5" class="code-annotation-target"><a href="#annotated-cell-5-5" aria-hidden="true" tabindex="-1"></a>  sidebar<span class="sc">:</span></span>
 <span id="annotated-cell-5-6"><a href="#annotated-cell-5-6" aria-hidden="true" tabindex="-1"></a>    title<span class="sc">:</span> <span class="st">"OHI-methods-EXAMPLE"</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-5-7" class="code-annotation-target"><a href="#annotated-cell-5-7" aria-hidden="true" tabindex="-1"></a>    style<span class="sc">:</span> <span class="st">"docked"</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-5-8" class="code-annotation-target"><a href="#annotated-cell-5-8" aria-hidden="true" tabindex="-1"></a>    search<span class="sc">:</span> true</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3" onclick="event.preventDefault();" href="">3</a><span id="annotated-cell-5-9" class="code-annotation-target"><a href="#annotated-cell-5-9" aria-hidden="true" tabindex="-1"></a>    contents<span class="sc">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-5-7" class="code-annotation-target"><a href="#annotated-cell-5-7" aria-hidden="true" tabindex="-1"></a>    style<span class="sc">:</span> <span class="st">"docked"</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="3" onclick="event.preventDefault();" href="">3</a><span id="annotated-cell-5-8" class="code-annotation-target"><a href="#annotated-cell-5-8" aria-hidden="true" tabindex="-1"></a>    search<span class="sc">:</span> true</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="4" onclick="event.preventDefault();" href="">4</a><span id="annotated-cell-5-9" class="code-annotation-target"><a href="#annotated-cell-5-9" aria-hidden="true" tabindex="-1"></a>    contents<span class="sc">:</span></span>
 <span id="annotated-cell-5-10"><a href="#annotated-cell-5-10" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> href<span class="sc">:</span> index.qmd</span>
 <span id="annotated-cell-5-11"><a href="#annotated-cell-5-11" aria-hidden="true" tabindex="-1"></a>        text<span class="sc">:</span> Home</span>
 <span id="annotated-cell-5-12"><a href="#annotated-cell-5-12" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> regions.qmd</span>
 <span id="annotated-cell-5-13"><a href="#annotated-cell-5-13" aria-hidden="true" tabindex="-1"></a>      <span class="sc">-</span> section<span class="sc">:</span> Models</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="4" onclick="event.preventDefault();" href="">4</a><span id="annotated-cell-5-14" class="code-annotation-target"><a href="#annotated-cell-5-14" aria-hidden="true" tabindex="-1"></a>        contents<span class="sc">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-5" data-target-annotation="5" onclick="event.preventDefault();" href="">5</a><span id="annotated-cell-5-14" class="code-annotation-target"><a href="#annotated-cell-5-14" aria-hidden="true" tabindex="-1"></a>        contents<span class="sc">:</span></span>
 <span id="annotated-cell-5-15"><a href="#annotated-cell-5-15" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> index<span class="sc">-</span>scores.qmd</span>
 <span id="annotated-cell-5-16"><a href="#annotated-cell-5-16" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> goal<span class="sc">-</span>scores.qmd</span>
 <span id="annotated-cell-5-17"><a href="#annotated-cell-5-17" aria-hidden="true" tabindex="-1"></a>          <span class="sc">-</span> future<span class="sc">-</span>dimensions.qmd</span>
@@ -633,19 +633,23 @@ Important
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-5" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="7" data-code-annotation="1">Choose from <code>"docked"</code> or <code>"floating"</code></span>
+<span data-code-cell="annotated-cell-5" data-code-annotation="1" data-code-lines="5">Specify <code>sidebar</code>, rather than <code>navbar</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-5" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="8" data-code-annotation="2">Remove search bar by setting <code>style</code> to <code>false</code></span>
+<span data-code-cell="annotated-cell-5" data-code-annotation="2" data-code-lines="7">Choose from <code>"docked"</code> or <code>"floating"</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-5" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="9,10,11,12,13,18" data-code-annotation="3">All top level pages or sections fall under this first <code>contents</code> section</span>
+<span data-code-cell="annotated-cell-5" data-code-annotation="3" data-code-lines="8">Remove search bar by setting <code>style</code> to <code>false</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-5" data-target-annotation="4">4</dt>
 <dd>
-<span data-code-cell="annotated-cell-5" data-code-lines="14,15,16,17" data-code-annotation="4">Create a sub menu by adding <code>contents</code> beneath a <code>section</code> header</span>
+<span data-code-cell="annotated-cell-5" data-code-annotation="4" data-code-lines="9,10,11,12,13,18">All top level pages or sections fall under this first <code>contents</code> section</span>
+</dd>
+<dt data-target-cell="annotated-cell-5" data-target-annotation="5">5</dt>
+<dd>
+<span data-code-cell="annotated-cell-5" data-code-annotation="5" data-code-lines="14,15,16,17">Create a sub menu by adding <code>contents</code> beneath a <code>section</code> header</span>
 </dd>
 </dl>
 </div>
@@ -720,7 +724,7 @@ Important
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-6" data-code-lines="17,18,19,20,21" data-code-annotation="1">Here, we converted the old <code>future-dimensions.qmd</code> into a section header with the same title, <strong>Likely future status dimensions</strong>. Expanding it reveals its contents – three new pages, <strong>Trend</strong>, <strong>Pressure</strong>, and <strong>Resilience</strong>.</span>
+<span data-code-cell="annotated-cell-6" data-code-annotation="1" data-code-lines="17,18,19,20,21">Here, we converted the old <code>future-dimensions.qmd</code> into a section header with the same title, <strong>Likely future status dimensions</strong>. Expanding it reveals its contents – three new pages, <strong>Trend</strong>, <strong>Pressure</strong>, and <strong>Resilience</strong>.</span>
 </dd>
 </dl>
 </div>
@@ -826,15 +830,15 @@ Important
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-7" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-7" data-code-lines="6" data-code-annotation="1">Update the website <code>title</code></span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="1" data-code-lines="6">Update the website <code>title</code></span>
 </dd>
 <dt data-target-cell="annotated-cell-7" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-7" data-code-lines="28" data-code-annotation="2">Remove Table of Contents from all pages (though you can enable TOC on a page-by-page basis by setting <code>toc: true</code> in the YAML of individual <code>.qmd</code> files)</span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="2" data-code-lines="28">Remove Table of Contents from all pages (though you can enable TOC on a page-by-page basis by setting <code>toc: true</code> in the YAML of individual <code>.qmd</code> files)</span>
 </dd>
 <dt data-target-cell="annotated-cell-7" data-target-annotation="3">3</dt>
 <dd>
-<span data-code-cell="annotated-cell-7" data-code-lines="29" data-code-annotation="3">Allow text / content to fill the entire page – read more on <a href="https://quarto.org/docs/output-formats/page-layout.html">page layout options</a></span>
+<span data-code-cell="annotated-cell-7" data-code-annotation="3" data-code-lines="29">Allow text / content to fill the entire page – read more on <a href="https://quarto.org/docs/output-formats/page-layout.html">page layout options</a></span>
 </dd>
 </dl>
 </div>
@@ -906,11 +910,11 @@ Important
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-8" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-8" data-code-lines="6" data-code-annotation="1">I decided to remove the website title, but you <em>can</em> include both a title and logo (the title will print beneath the logo)</span>
+<span data-code-cell="annotated-cell-8" data-code-annotation="1" data-code-lines="6">I decided to remove the website title, but you <em>can</em> include both a title and logo (the title will print beneath the logo)</span>
 </dd>
 <dt data-target-cell="annotated-cell-8" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-8" data-code-lines="7" data-code-annotation="2">I saved my logo to a folder called <code>media/</code></span>
+<span data-code-cell="annotated-cell-8" data-code-annotation="2" data-code-lines="7">I saved my logo to a folder called <code>media/</code></span>
 </dd>
 </dl>
 </div>
@@ -962,11 +966,11 @@ Important
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-9" data-code-lines="24" data-code-annotation="1">Anything that you’d like to place in your website footer should be included under the <code>page-footer</code> option. Content can be placed on the <code>left</code>, <code>right</code>, or <code>center</code> of the footer.</span>
+<span data-code-cell="annotated-cell-9" data-code-annotation="1" data-code-lines="24">Anything that you’d like to place in your website footer should be included under the <code>page-footer</code> option. Content can be placed on the <code>left</code>, <code>right</code>, or <code>center</code> of the footer.</span>
 </dd>
 <dt data-target-cell="annotated-cell-9" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-9" data-code-lines="26" data-code-annotation="2">We can install the <a href="https://github.com/quarto-ext/fontawesome">fontawesome extension</a> to embed icons, like the GitHub logo here, throughout our website. See the tip below for more information!</span>
+<span data-code-cell="annotated-cell-9" data-code-annotation="2" data-code-lines="26">We can install the <a href="https://github.com/quarto-ext/fontawesome">fontawesome extension</a> to embed icons, like the GitHub logo here, throughout our website. See the tip below for more information!</span>
 </dd>
 </dl>
 </div>
@@ -1207,7 +1211,7 @@ Important
 <section id="create-and-apply-a-.scss-file-stylesheet" class="level3">
 <h3 class="anchored" data-anchor-id="create-and-apply-a-.scss-file-stylesheet">Create and apply a <code>.scss</code> file / stylesheet</h3>
 <ol type="1">
-<li><p><strong>Create a <code>styles.scss</code> file</strong> in your repo’s root directory (you can name it however you’d like), using the command <code>touch styles.scss</code> in the Terminal, or by Blank File &gt; Text File &gt; typing <code>styles.scss</code> from the RStudio Files pane.</p></li>
+<li><p><strong>Create a <code>styles.scss</code> file</strong> in your repo’s root directory (you can name it however you’d like), using the command <code>touch styles.scss</code> in the Terminal, or by <strong>Blank File</strong> &gt; <strong>Text File</strong> &gt; typing <code>styles.scss</code> from the RStudio Files pane.</p></li>
 <li><p><strong>Add the <code>/*-- scss:defaults --*/</code> region decorator to the top of <code>styles.scss</code></strong> (<a href="https://quarto.org/docs/output-formats/html-themes-more.html">required by Quarto</a>) – you’ll write all your Sass variables underneath this:</p></li>
 </ol>
 <div class="cell">
@@ -1245,7 +1249,7 @@ Important
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-12" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-12" data-code-lines="9" data-code-annotation="1">Apply your <code>styles.scss</code> stylesheet using the <code>theme</code> option</span>
+<span data-code-cell="annotated-cell-12" data-code-annotation="1" data-code-lines="9">Apply your <code>styles.scss</code> stylesheet using the <code>theme</code> option</span>
 </dd>
 </dl>
 </div>
@@ -1415,7 +1419,7 @@ Important
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-16" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-16" data-code-lines="12" data-code-annotation="1">Be sure to spell the font family name exactly as it appears on Google Fonts</span>
+<span data-code-cell="annotated-cell-16" data-code-annotation="1" data-code-lines="12">Be sure to spell the font family name exactly as it appears on Google Fonts</span>
 </dd>
 </dl>
 </div>
