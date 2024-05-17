@@ -107,7 +107,7 @@ Not all font families come in every style. For example, [Nunito](https://fonts.g
 knitr::include_graphics("media/select-font.gif")
 ```
 
-3. **Import yuor Google font** by pasting the import code into `styles.scss` (I always place this at the top of my stylesheet, beneath `/*-- scss:defaults --*/`):
+3. **Import your Google font** by pasting the import code into `styles.scss` (I always place this at the top of my stylesheet, beneath `/*-- scss:defaults --*/`):
 
 ```{sass filename="styles.scss"}
 /*-- scss:defaults --*/
