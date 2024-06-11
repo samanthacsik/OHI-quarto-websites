@@ -2,7 +2,7 @@
 format: html
 ---
 
-## {{< fa circle-plus title="A plus sign" >}} Additional resources & tips
+## {{< fa circle-plus title="A plus sign" >}} Additional resources & tips {#resources}
 
 - New to Markdown or need a refresher? Review the most commonly used [markdown syntax](https://quarto.org/docs/authoring/markdown-basics.html).
 - Quarto will automatically generate citations and a bibliography in a number of styles(!!) -- check out the [official documentation](https://quarto.org/docs/authoring/footnotes-and-citations.html). I also provide some examples, screenshots, and explanations in [this blog post](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/#creating-a-bibliography-and-adding-citations).

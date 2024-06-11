@@ -2,7 +2,7 @@
 format: html
 ---
 
-## {{< fa arrow-pointer title="A computer mouse cursor" >}} Add pages and configure your website's navigation menus
+## {{< fa arrow-pointer title="A computer mouse cursor" >}} Add pages and configure your website's navigation menus {#website-navigation}
 
 Quarto is quite flexible, supporting a variety of website navigation options, including top navigation (navbar), side navigation (sidebar), or a combination of the two. This next section will provide examples for getting started with both navbar and sidebar navigation.
 

@@ -2,7 +2,7 @@
 format: html
 ---
 
-## {{< fa gear title="A gear" >}} Additional `_quarto.yml` configurations
+## {{< fa gear title="A gear" >}} Additional `_quarto.yml` configurations {#yml-configs}
 
 The `_quarto.yml` file is a place to make lots of additional updates to website appearance / configurations. Here, we'll review just a few places to make easy and valuable updates, but be sure to check out the [Quarto documentation](https://quarto.org/docs/websites/website-tools.html) for additional available tooling options.
 

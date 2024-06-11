@@ -1,5 +1,5 @@
 ---
-title: "QUARTO FOR DOCUMENTING OHI METHODS" 
+title: "QUARTO FOR DOCUMENTING OHI METHODS"
 subtitle: "An intro to building, deploying, and customizing Quarto websites"
 author: 
   - name: Sam Csik
